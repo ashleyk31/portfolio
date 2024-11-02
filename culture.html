@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>identity - ashley kang</title>
+         <link rel="stylesheet" href="style.css" />
+         <link rel="icon" href="/assets/icon.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap" rel="stylesheet">
+          <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <style>
+      /* Slideshow container */
+      .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+      }
+      
+      /* Next & previous buttons */
+      .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+      
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+      }
+      
+      /* Caption text */
+      .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: left;
+      }
+      
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+      
+      /* Fading animation */
+      .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+      
+      @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+      }
+      
+      /* On smaller screens, decrease text size */
+      @media only screen and (max-width: 300px) {
+        .prev, .next,.text {font-size: 11px}
+      }
+    </style>
+    </head>
+
+  <body>
+    <!-- main menu -->
+    <nav id="desktop-nav">
+      <div class="nav-links">
+        <div style="width: 33%; float:left">
+          <a href="index.html" >home</a>
+        </div>
+        <div style="width: 33%; float:left; text-align: center;" >
+          <a href="art.html" >art</a>
+        </div>
+        <div style="width: 33%; float:right; text-align: right;" >
+          <a href="aboutme.html" >about</a>
+        </div>
+      </div>
+    </nav>
+
+    
+    <!--work-->
+    
+    <h1 class="title">Culture</h1> <br>
+	<p style="text-align: center;">Year 2021 <br>This series of miniature photography captures the unique Korean culture through origami.</p>
+    <br>
+    <section id="work">
+
+		<div class="grid-container">
+			<div class="grid-item">
+				<div>
+					<h2 style="text-align: center; letter-spacing: 1em; font-weight: 900; padding-left: 0; padding-right: 0;">PUBLISHED</h2><br>
+					<h2 style="text-align: left; font-weight: 300; padding-left: 0; padding-right: 0;";>"HCPSS 31st Annual Senior Show & Junior Portfolio Development Exhibition"</h2>
+					<p style="text-align: left; font-size: small;">http://hcpssjuniorseniorexhibition2021.weebly.com/ </p>
+				</div>
+				<div>
+					<img src="art/culture_award.png" alt="screenshot of published website" />	
+				</div>
+			</div>
+		</div>
+		<br><br><br>
+      
+		<div class="slideshow-container">
+				
+			<div class="mySlides fade">
+				<div class="numbertext">1 Kimbab</div>
+				<img src="art/culture_kimbab.jpeg" style="width:100%">
+				<div class="text"></div>
+				</div>
+				
+				<div class="mySlides fade">
+				<div class="numbertext">2 Hangul</div>
+				<img src="art/culture_letter.jpg" style="width:100%">
+				<div class="text"></div>
+				</div>
+				
+				<div class="mySlides fade">
+				<div class="numbertext">3 Cheongsa Chorong</div>
+				<img src="art/culture_lantern.jpg" style="width:100%">
+				<div class="text"></div>
+				</div>
+
+				<div class="mySlides fade">
+					<div class="numbertext">4 Traditional Fan</div>
+					<img src="art/culture_fan.jpg" style="width:100%">
+					<div class="text"></div>
+				</div>
+
+				<div class="mySlides fade">
+					<div class="numbertext">5 Byeongpoong</div>
+					<img src="art/culture_byeongpoong.jpg" style="width:100%">
+					<div class="text"></div>
+				</div>
+
+				<div class="mySlides fade">
+					<div class="numbertext">6 Bibimbab</div>
+					<img src="art/culture_bibimbab.jpg" style="width:100%">
+					<div class="text"></div>
+				</div>
+
+				<div class="mySlides fade">
+					<div class="numbertext">7 Yun nori</div>
+					<img src="art/culture_yoot.jpg" style="width:100%">
+					<div class="text"></div>
+				</div>
+
+				<div class="mySlides fade">
+					<div class="numbertext">8 Giwa</div>
+					<img src="art/culture_house.jpg" style="width:100%">
+					<div class="text"></div>
+				</div>
+
+				<div class="mySlides fade">
+					<div class="numbertext">9 Hanbok</div>
+					<img src="art/culture_clothing.jpg" style="width:100%">
+					<div class="text"></div>
+				</div>
+				
+				<div class="mySlides fade">
+					<div class="numbertext">10 Drinking Culture</div>
+					<img src="art/culture_drink.jpg" style="width:100%">
+					<div class="text"></div>
+				</div>
+				
+				<a class="prev" onclick="plusSlides(-1)">❮</a>
+				<a class="next" onclick="plusSlides(1)">❯</a>
+				
+				</div>
+				<br>
+				
+			<h2 style="padding: none;">ARTIST STATEMENT</h2>
+			<br>
+			<p>My sustained investigation focuses on the unique Korean culture through their unique colors, 
+			unique texture, and ancient tradition designs. After researching through multiple media, I 
+			produced a list of the most used unique color combinations, items, and designs that appeared 
+			throughout them to create a miniature figure using paper and other items to express the unique 
+			texture as much as possible. My focus was on the colors, which were also known as the Obangsaek, 
+			which means five colors including blue, red, yellow, white, and black. Hoping to capture the 
+			details of each item, I used different lightings, textures of paper, backgrounds, and properties 
+			to allow the viewers to fully observe the object and the culture.
+			There are a total of ten photographs: the Korean dish (kimbap), 
+			traditional Korean letters (hangul), traditional lanterns along the unique roof design 
+			(Cheongsa chorong, Giwa), traditional fans, traditional folding screen (byeong-poong), 
+			another famous Korean dish (bibimbap), traditional board game (Yun nori), another traditional 
+			roof design (Giwa), traditional clothing (hanbok), and a modern drinking environment with the 
+			silver table and the kimchi side dish.
+			I hope people can view this series not only to see the details in each photograph 
+			but also to recognize the culture and to understand that these are all part of the
+			unique Korean culture that should be acknowledged.</p>
+
+            <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+            
+    <div>
+      <footer>
+        <p>&#169; Ashley Youna Kang, 2024</p>
+      </footer>
+    </div>
+  </section>
+</body>
+
+
+</html>

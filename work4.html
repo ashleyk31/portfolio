@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>women in government - ashley kang</title>
+      <link rel="stylesheet" href="style.css" />
+      <!--<link rel="stylesheet" href="mediaqueries.css" />-->
+      <link rel="icon" href="/assets/icon.png">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap" rel="stylesheet">
+    
+  </head>
+
+  <body>
+    <!-- main menu -->
+    <nav id="desktop-nav">
+      <div class="nav-links">
+        <div style="width: 33%; float:left">
+          <a href="index.html" >home</a>
+        </div>
+        <div style="width: 33%; float:left; text-align: center;" >
+          <a href="work.html" >back to work</a>
+        </div>
+        <div style="width: 33%; float:right; text-align: right;" >
+          <a href="aboutme.html" >about</a>
+        </div>
+      </div>
+    </nav>
+
+    
+    <!--work-->
+    <section class="work">
+        <!-- work 1 -->
+        <hr class="separator"> 
+        <br>
+        <h2 class = "worktitle">
+          A Quantitative Analysis of TikTok Dance Trends' Viral Success</h2>
+        <br>
+        <div class = "worksubtitle">Wellesley College - Data Science and the Web Spring 2024</div>
+        <br>
+
+        <div class = "titlestyle">Tools</div>
+        <div class="full-width row">
+            <div style="flex: 1; min-width: 300px;">
+                <span class="tool-pill">Selenium</span>
+                <span class="tool-pill">Linear Regression Analysis</span>
+                <span class="tool-pill">Time Series</span>
+                <span class="tool-pill">Pandas</span>
+                <span class="tool-pill">Seaborn</span>
+                <span class="tool-pill">Matplotlib</span>
+            </div>
+        </div>
+        <br>
+        <div class = "titlestyle">Link to <a href="https://drive.google.com/file/d/1tLm2q1IAeixOFSYyRussgEoLMcaED2LS/view?usp=sharing" target="_blank" style="font-family: monospace;"> Paper</a></div>
+        <br>
+        <br>
+        <div class = "titlestyle">Visualization</div>
+            <div class="gallery-container" style="gap: 30px">
+                <div class="gallery-item">
+                    <div>
+                        <img src="art/work3slide1.jpg" alt="First Hypothesis">
+                    </div>
+                    <div>
+                          <p>Hypothesis</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <div>
+                        <img src="art/work3slide2.jpg" alt="Year 2021 Trend">
+                    </div>
+                    <div>
+                        <p>Year 2021 Trend</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                  <div>
+                      <img src="art/work3slide3.jpg" alt="Year 2022 Trend">
+                  </div>
+                  <div>
+                      <p>Year 2022 Trend</p>
+                  </div>
+                </div>
+
+                <div class="gallery-item">
+                  <div>
+                      <img src="art/work3slide4.jpg" alt="Year 2023 Trend">
+                  </div>
+                  <div>
+                      <p>Year 2023 Trend</p>
+                  </div>
+                </div>
+
+                <div class="gallery-item">
+                  <div>
+                      <img src="art/work3slide5.jpg" alt="Year 2024 Trend">
+                  </div>
+                  <div>
+                      <p>Year 2024 Trend</p>
+                  </div>
+                </div>
+
+                <div class="gallery-item">
+                  <div>
+                      <img src="art/work3slide6.jpg" alt="Results">
+                  </div>
+                  <div>
+                      <p>Results</p>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <br>   
+
+        <div class = "titlestyle">Introduction</div>
+        <p>
+          With over one billion users, TikTok is arguably one of the most pop-
+          ular social media platforms of all time (Duffy, 2023). The app itself
+          
+          functions as follows: each user has an individual account/profile
+          and can create videos to share with both their followers or friends,
+          but those videos also can reach individuals with whom the user has
+          no literal connection. Users can like, comment on, and share videos
+          with others (Zhang, 2023). The “For You Page” allows users to view
+          
+          videos curated for them. TikTok uses a specific and unique algo-
+          rithm to introduce the videos on a user’s “For You Page”— further
+          
+          individualizing user experiences. TikTok’s immense success has led
+          to other popular platforms integrating features originally unique
+          
+          to TikTok; YouTube Shorts and Instagram’s Reels both closely resemble
+           the user experience on TikTok. However, they arguably fall
+          
+          short of capturing its true essence, as they act more as secondary
+          content forms to boost platform engagement than TikTok that uses
+          them as a primary content form. Further, brands, influencers, and
+          celebrities have utilized TikTok to promote their content. Given the
+          extreme popularity and influence of the application and its relevance
+          to individuals and companies looking to expand their audiences and
+          increase their popularity, it is important to understand the factors
+
+          that determine a video’s virality on the platform. This understand-
+          ing can potentially provide valuable insights for content creators on
+
+          how to optimize video details such as video descriptions to increase
+          the likelihood of virality when it comes to dance trend videos on
+          TikTok. The decision to analyze specifically dance trends comes
+          from the platform’s popularity and market di!erentiation from other
+          social media platforms due to viral dance trends started by artists
+          and influencers on the platform during COVID-19 lockdowns. Since
+          most were at home and had limited access to outside entertainment,
+          many households found joy in watching and recreating these dances
+
+          to the original sounds they were posted to. Now, beyond the lock-
+          down, TikTok dance trends continue to go viral and are now used
+
+          by content creators and brands (not just to entertain their audience)
+          but to promote their content and businesses. Therefore, insights into
+          how these trends become viral could be game-changers in the world
+          of TikTok content creation, o!ering new strategies and approaches
+          for maximizing the reach and impact of dance trend videos. For
+          our study, we investigated the patterns that influence the virality of
+
+          TikTok videos and how this changes over time? To answer this question, 
+          we looked into two questions and hypothesized what would
+
+          happen in the study:
+          RQ1: What distinguishes the accounts driving the accelerated
+          virality of trends?
+          RQ2: How do specific trends in video descriptions contribute to
+          the virality of TikTok videos?
+        </p>
+        <br>
+
+
+<!-- 
+          The results showed that most trends started from a mega/macro with a few nano influencers. There were more nano influencers who 
+          posted in the beginning of the trend compared to the peak. At the peak, the author of the video with the most views tends 
+          to be mega/macro influencers, and there are more mega and macro influencers in th peak. 
+           -->
+           
+        
+        <br>        
+        <div class = "titlestyle">My Contributions</div>
+        <p>
+          I managed the entire first hypothesis by scraping data from TikTok. 
+          I filtered that dataset to identify the top 5 songs per year and determined the influencer’s tier based on our predefined scale.
+          Additionally, I created a time series for each song, with the frequency representing the total number of view counts.
+        </p>
+        <br>
+        <div class="gallery-container" style="gap: 30px">
+          <div class="gallery-item">
+              <div>
+                  <img src="art/output1-1.png" alt="Figure 2">
+              </div>
+              <div>
+                    <p>Figure 2</p>
+              </div>
+          </div>
+
+          <div class="gallery-item">
+              <div>
+                  <img src="art/output1-2.png" alt="Figure 3">
+              </div>
+              <div>
+                  <p>Figure 3</p>
+              </div>
+          </div>
+
+          <div class="gallery-item">
+            <div>
+                <img src="art/output2-1.png" alt="Figure 4">
+            </div>
+            <div>
+                <p>Figure 4</p>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <div>
+                <img src="art/output2-2.png" alt="Figure 5">
+            </div>
+            <div>
+                <p>Figure 5</p>
+            </div>
+          </div>
+        </div>
+
+      </p>
+      <br>
+        
+        
+
+    <script src="script.js"></script>
+    
+    <div>
+      <footer>
+        <p>&#169; Ashley Youna Kang, 2024</p>
+      </footer>
+    </div>
+
+  </body>
+</section>
+
+</html>
