@@ -7,24 +7,20 @@ I designed and built this website to showcase the various projects and art piece
 
 ### What’s Inside:
 <li> 
-  Projects: A collection of the development work and projects I’ve worked on, showcasing my skills and experience in [mention any specific fields, e.g., web development, app development, design].
+  Projects: A collection of development work and projects I’ve worked on so far
 </li>
-Artworks: A gallery of digital and traditional art that highlights my artistic journey and creative skills.
-About Me: Learn more about my background, education, and what drives me as a creator.
-Contact: Get in touch with me for collaborations, feedback, or just to say hello!
-Technologies Used:
+<li>
+  Artworks: A gallery showcasing my digital and traditional art, starting from 2017.
+</li>
+
+### Technologies Used:
 This website was built using the following technologies:
 
-HTML5 for the structure of the site.
-CSS3 for the styling and layout.
-JavaScript for interactivity and dynamic content.
-[Add any frameworks or libraries used, e.g., React, Bootstrap, etc.]
-Features:
-Responsive Design: The website adjusts to different screen sizes to ensure a great viewing experience on desktops, tablets, and mobile devices.
-Smooth Navigation: The site features smooth scrolling and an intuitive layout, making it easy to navigate through the sections.
-Interactive Elements: Hover effects, clickable images, and dynamic content to enhance the user experience.
-How to Use:
+HTML5, CSS3, JavaScript
+
+### How to Use:
 Browse through the projects and art sections to view my work.
-You can also get in touch via the contact form in the footer or follow my social links to stay updated with my latest works.
-Thank You!
-Thank you for visiting my portfolio! I hope you enjoy exploring my work as much as I enjoyed creating it. Feel free to reach out if you have any questions or opportunities for collaboration.
+You can also get in touch via email at <a>yk102@wellesley.edu</a>. 
+
+Thank you for visiting my portfolio! 
+Feel free to reach out if you have any questions or opportunities for collaboration.
