@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ashley kang</title>
+        <link rel="stylesheet" href="main.css" />
+        <link rel="icon" href="/assets/icon.png">
+    </head>
+
+    <body>
+        <section class="section"></section>
+        <section class="section">
+            <div class="logo">
+                <p class = title>ASHLEY Y. KANG</p>
+            </div>
+            <br><br>
+            <a href="work.html">
+                <div class="wave">
+                    <label>work</label>
+                </div>
+            </a>    
+
+            <a href="art.html">
+                <div class="wave" style="top: 50%;">
+                    <label>art</label>
+                </div>
+            </a>    
+                
+            <a href="https://drive.google.com/file/d/1t8dtb1K5k3_medSczR-SpmIyMH8o_IhB/view?usp=sharing", target="_blank">
+                <div class="wave" style="top: 60%">
+                    <label>resume</label>
+                </div>
+            </a>    
+            <br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png"
+                    alt="My LinkedIn profile"
+                    class="icon"
+                    onclick="window.open('https://www.linkedin.com/in/-ashleykang/')"/>
+                <img src="./assets/instagram.png"
+                    alt="My Instagram profile"
+                    class="icon"
+                    onclick="window.open('https://www.instagram.com/samweolizi/')"/>
+            </div>
+        </section>
+    </body>
+
+    <script>
+        const text = document.querySelectorAll('label');
+        text.forEach(label =>{
+            label.innerHTML = label.textContent.split('').map((text, wave) =>
+          `<span style="transition-delay: ${wave * 50}ms">${text}</span>`).join('');
+        });
+    </script>
+    
+</html>
