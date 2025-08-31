@@ -20,7 +20,7 @@ HTML5, CSS3, JavaScript
 
 ### How to Use:
 Browse through the projects and art sections to view my work.
-You can also get in touch via email at <a>yk102@wellesley.edu</a>. 
+You can also get in touch via email at <a>ashleykg@umich.edu</a>. 
 
 Thank you for visiting my portfolio! 
 Feel free to reach out if you have any questions or opportunities for collaboration.
