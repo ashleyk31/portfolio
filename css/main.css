@@ -96,11 +96,8 @@ section {
     padding: 0;
 }
 
-
-
-
 .wave{
-  position: absolute;
+  position: relative;
   top: 40%;
   left: 20%;
   transform: translate(-50%, -50%);

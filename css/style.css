@@ -348,6 +348,32 @@ cursor: default;
   flex: 1;
 }
 
+img.profile {
+  width: 20%;
+  border-radius: 40%;
+  /* display: block;
+  margin: 0 auto; */
+}
+
+.container#about {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 0 20vh 0 20vh;
+}
+
+.container#about p {
+  flex: 1;
+  font-size: large;
+  font-family: "Nova Mono";
+  line-height: 1.5;
+}
+
+.container#about img {
+  flex: 1;
+  max-width: 300px;
+  height: auto;
+}
 
 /* GALLERY SECTION FOR DIGITAL PAGE */
 .gallery-container {
