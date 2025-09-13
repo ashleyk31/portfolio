@@ -48,28 +48,29 @@
                 </div>
             </section>
         </main>
+
+        <footer></footer>
+        <script>
+            const text = document.querySelectorAll('label');
+            text.forEach(label =>{
+                label.innerHTML = label.textContent.split('').map((text, wave) =>
+            `<span style="transition-delay: ${wave * 50}ms">${text}</span>`).join('');
+            });
+        </script>
+        <!--     
+                function checkPassword() {
+                    const password = prompt("Enter the password:");
+                    const correctPassword = "ashleykang";
+
+                    if (password === correctPassword) {
+                    document.getElementById("content").style.display = "block";
+                    } else {
+                    alert("Incorrect password. Try again.");
+                    checkPassword();
+                    }
+                }
+                checkPassword(); -->
     </body>
 
-    <script>
-        const text = document.querySelectorAll('label');
-        text.forEach(label =>{
-            label.innerHTML = label.textContent.split('').map((text, wave) =>
-          `<span style="transition-delay: ${wave * 50}ms">${text}</span>`).join('');
-        });
-    </script>
-<!--     
-        function checkPassword() {
-            const password = prompt("Enter the password:");
-            const correctPassword = "ashleykang";
-
-            if (password === correctPassword) {
-               document.getElementById("content").style.display = "block";
-            } else {
-               alert("Incorrect password. Try again.");
-               checkPassword();
-            }
-        }
-        checkPassword(); -->
-    
 
 </html>
