@@ -125,3 +125,18 @@ label:hover span{
   color: rgb(110, 141, 200);
   transform: translateY(-15px);
 }
+/* 
+.wave span {
+  font-size: 50px;
+  font-weight: 500;
+  color: silver;
+  cursor: pointer;
+  display: inline-block;
+  transition: 0.2s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+
+.wave span:hover {
+  color: rgb(110, 141, 200);
+  transform: translateY(-15px);
+} 
+*/
