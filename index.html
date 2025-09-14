@@ -11,7 +11,7 @@
     </head>
 
     <body>
-        <main>
+        <main id="content">
             <section class="section"></section>
             <section class="section">
                 <div class="logo">
@@ -62,20 +62,27 @@
                 label.innerHTML = label.textContent.split('').map((text, wave) =>
             `<span style="transition-delay: ${wave * 50}ms">${text}</span>`).join('');
             });
-        </script>
-        <!--
-                function checkPassword() {
-                    const password = prompt("Enter the password:");
-                    const correctPassword = "ashleykang";
 
-                    if (password === correctPassword) {
+            function checkPassword() {
+                const correctPassword = "ashleykang";
+
+                if (sessionStorage.getItem("authenticated") === "true") {
                     document.getElementById("content").style.display = "block";
-                    } else {
+                    return;
+                }
+
+                const password = prompt("Enter the password:");
+
+                if (password === correctPassword) {
+                    document.getElementById("content").style.display = "block";
+                    sessionStorage.setItem("authenticated", "true");
+                } else {
                     alert("Incorrect password. Try again.");
                     checkPassword();
-                    }
                 }
-                checkPassword(); -->
+            }
+            checkPassword();
+        </script>
     </body>
 
 
