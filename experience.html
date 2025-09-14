@@ -35,7 +35,7 @@
             <br><br>
             <div>
                 <div class="accordion">
-                    <hr></hr>
+                    <hr>
                     <div class="session">
                         <div class="accordion-visible">
                             <div style="width: 100%;">
@@ -72,7 +72,7 @@
                         </div>       
                     </div>
 
-                    <hr></hr>
+                    <hr>
                     <div class="session">
                         <div class="accordion-visible">
                             <div style="width: 100%;">
@@ -103,7 +103,7 @@
                         </div>       
                     </div>
 
-                    <hr></hr>
+                    <hr>
                     <div class="session">
                         <div class="accordion-visible">
                             <div style="width: 100%;">
@@ -134,7 +134,7 @@
                     </div>
 
 
-                    <hr></hr>
+                    <hr>
                     <div class="session">
                         <div class="accordion-visible">
                             <div style="width: 100%;">
@@ -173,7 +173,7 @@
                     </div>
 
 
-                    <hr></hr>
+                    <hr>
                     <div class="session">
                         <div class="accordion-visible">
                             <div style="width: 100%;">
@@ -205,7 +205,7 @@
                     </div>
 
 
-                    <hr></hr>
+                    <hr>
                     <div class="session">
                         <div class="accordion-visible">
                             <div style="width: 100%;">
@@ -246,103 +246,102 @@
                 </div>
             </div>
         </main>
-        </body>
-        
-        <style>
-            .accordion-area{
-                margin: 20px 0 20px 0;
-            }
-
-            .location {
-                font-family: "Abel", sans-serif;
-                color: rgb(51, 71, 74);
-                text-transform: uppercase;
-            }
-            
-            .position {
-                font-family: 'Lilita One', sans-serif;
-                font-size: 1.2em;
-                text-transform: uppercase;
-                color: black;
-                padding-left: 0;
-            }
-            
-            .accordion, .full-width {
-                width: 100%;
-                margin-bottom: 30px; 
-                flex-direction: column;
-            }
-
-            .session {
-                cursor: pointer;
-            }
-
-            .accordion-visible {
-                display: flex; 
-                padding: 0px;
-            }
-
-            .visible {
-                padding-bottom: 0;
-            }
-            
-            .content {
-                max-height: 0;
-                overflow: hidden;
-                transition: max-height ease-in-out;
-                margin-bottom: 30px;
-                padding: 0px;
-            }
-
-            .content.active {
-                max-height: 10000px;
-            }
-
-            #expand-all {
-            margin-top: 10px;
-            padding: 10px 15px;
-            cursor: pointer;
-            background-color: rgb(51, 71, 74);
-            color: white;
-            border: none;
-            border-radius: 5px;
-            }
-
-        </style>
-
-        <script>
-            // ACCORDION
-            function toggleContent(event) {
-                const session = event.currentTarget.closest('.session'); 
-                const content = session.querySelector('.content'); 
-                
-                content.classList.toggle('active');
-            }
-
-            const visibleElements = document.querySelectorAll('.visible');
-            visibleElements.forEach(visibleElement => {
-                visibleElement.addEventListener('click', toggleContent);
-            });
-
-            function toggleAll() {
-                const contents = document.querySelectorAll('.content');
-                const allExpanded = Array.from(contents).every(content => content.classList.contains('active'));
-
-                contents.forEach(content => {
-                    if (allExpanded) {
-                        content.classList.remove('active');
-                    } else {
-                        content.classList.add('active');
-                    }
-                });
-                document.getElementById("expand-all").textContent = allExpanded ? "Expand All" : "Collapse All";
-            }
-
-            document.getElementById("expand-all").addEventListener("click", toggleAll);
-        </script>
-
-        <footer class="footer">
-            <p>&#169; Ashley Youna Kang, 2024</p>
-        </footer>
     </body>
+    
+    <style>
+        .accordion-area{
+            margin: 20px 0 20px 0;
+        }
+
+        .location {
+            font-family: "Abel", sans-serif;
+            color: rgb(51, 71, 74);
+            text-transform: uppercase;
+        }
+        
+        .position {
+            font-family: 'Lilita One', sans-serif;
+            font-size: 1.2em;
+            text-transform: uppercase;
+            color: black;
+            padding-left: 0;
+        }
+        
+        .accordion, .full-width {
+            width: 100%;
+            margin-bottom: 30px; 
+            flex-direction: column;
+        }
+
+        .session {
+            cursor: pointer;
+        }
+
+        .accordion-visible {
+            display: flex; 
+            padding: 0px;
+        }
+
+        .visible {
+            padding-bottom: 0;
+        }
+        
+        .content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height ease-in-out;
+            margin-bottom: 30px;
+            padding: 0px;
+        }
+
+        .content.active {
+            max-height: 10000px;
+        }
+
+        #expand-all {
+        margin-top: 10px;
+        padding: 10px 15px;
+        cursor: pointer;
+        background-color: rgb(51, 71, 74);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        }
+
+    </style>
+
+    <script>
+        // ACCORDION
+        function toggleContent(event) {
+            const session = event.currentTarget.closest('.session'); 
+            const content = session.querySelector('.content'); 
+            
+            content.classList.toggle('active');
+        }
+
+        const visibleElements = document.querySelectorAll('.visible');
+        visibleElements.forEach(visibleElement => {
+            visibleElement.addEventListener('click', toggleContent);
+        });
+
+        function toggleAll() {
+            const contents = document.querySelectorAll('.content');
+            const allExpanded = Array.from(contents).every(content => content.classList.contains('active'));
+
+            contents.forEach(content => {
+                if (allExpanded) {
+                    content.classList.remove('active');
+                } else {
+                    content.classList.add('active');
+                }
+            });
+            document.getElementById("expand-all").textContent = allExpanded ? "Expand All" : "Collapse All";
+        }
+
+        document.getElementById("expand-all").addEventListener("click", toggleAll);
+    </script>
+
+    <footer class="footer">
+        <p>&#169; Ashley Youna Kang, 2024</p>
+    </footer>
 </section>
