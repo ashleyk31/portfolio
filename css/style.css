@@ -685,3 +685,17 @@ footer p {
   padding-left: 20px;
   list-style-type: disc;
 }
+
+
+figcaption {
+  font-family: "Abel", sans-serif;
+  line-height: 1.5;
+  font-style: italic; 
+}
+
+figure img {
+  height: 200px;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+}

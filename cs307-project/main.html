@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Final Project</title>
+    <style>
+      canvas {
+          display: block;
+          margin: 10px auto;
+          width: 90%;
+          height: 100%;
+          /* this is the size for the vertial view */
+          /* width: 350px;
+          height: 600px; */
+      }
+    </style>
+</head>
+
+<body>
+<h1>Final Project: Creative Scene</h1>
+
+<script type="importmap">
+            {
+              "imports": {
+                  "three": "https://cdn.jsdelivr.net/npm/three@0.172.0/build/three.module.js",
+                  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.172.0/examples/jsm/",
+                  "tw": "https://cs.wellesley.edu/~cs307/threejs/libs/tw-sp25.js"
+              }
+            }
+</script>
+<script src="https://cs.wellesley.edu/~cs307/threejs/libs/dat.gui-r95.js"></script>
+<script type="module" src="main.js"></script>
+
+<h3>Keys: </h3>
+<ul>
+  <li>key <strong>s</strong>: start animation</li>
+  <li>key <strong>p</strong>: pause animation</li>
+  <li>key <strong>r</strong>: restart cars' positions and stop animation</li>
+  <li>number <strong>1</strong> key: camera 1</li>
+  <li>number <strong>2</strong> key: camera 2</li>
+  <li>number <strong>3</strong> key: camera 3</li>
+  <li>number <strong>4</strong> key: camera 4</li>
+</ul>
+</body>
+</html>
