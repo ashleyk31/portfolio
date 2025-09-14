@@ -309,40 +309,41 @@
                 </div>
             </div>
         </main>
-    </body>
-    
-    <script>
-        // ACCORDION
-        function toggleContent(event) {
-            const session = event.currentTarget.closest('.session'); 
-            const content = session.querySelector('.content'); 
-            
-            content.classList.toggle('active');
-        }
+        <script>
+            // ACCORDION
+            function toggleContent(event) {
+                const session = event.currentTarget.closest('.session'); 
+                const content = session.querySelector('.content'); 
+                
+                content.classList.toggle('active');
+            }
 
-        const visibleElements = document.querySelectorAll('.visible');
-        visibleElements.forEach(visibleElement => {
-            visibleElement.addEventListener('click', toggleContent);
-        });
-
-        function toggleAll() {
-            const contents = document.querySelectorAll('.content');
-            const allExpanded = Array.from(contents).every(content => content.classList.contains('active'));
-
-            contents.forEach(content => {
-                if (allExpanded) {
-                    content.classList.remove('active');
-                } else {
-                    content.classList.add('active');
-                }
+            const visibleElements = document.querySelectorAll('.visible');
+            visibleElements.forEach(visibleElement => {
+                visibleElement.addEventListener('click', toggleContent);
             });
-            document.getElementById("expand-all").textContent = allExpanded ? "Expand All" : "Collapse All";
-        }
 
-        document.getElementById("expand-all").addEventListener("click", toggleAll);
-    </script>
+            function toggleAll() {
+                const contents = document.querySelectorAll('.content');
+                const allExpanded = Array.from(contents).every(content => content.classList.contains('active'));
 
-    <footer class="footer">
-        <p>&#169; Ashley Youna Kang, 2024</p>
-    </footer>
+                contents.forEach(content => {
+                    if (allExpanded) {
+                        content.classList.remove('active');
+                    } else {
+                        content.classList.add('active');
+                    }
+                });
+                document.getElementById("expand-all").textContent = allExpanded ? "Expand All" : "Collapse All";
+            }
+
+            document.getElementById("expand-all").addEventListener("click", toggleAll);
+        </script>
+
+        <footer class="footer">
+            <p>&#169; Ashley Youna Kang, 2024</p>
+        </footer>
+
+    </body>
+
 </html>
