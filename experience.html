@@ -8,6 +8,69 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="icon" href="assets/favicon.ico">
         <link href="https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap" rel="stylesheet">
+
+        <style>
+            .accordion-area{
+                margin: 20px 0 20px 0;
+            }
+
+            .location {
+                font-family: "Abel", sans-serif;
+                color: rgb(51, 71, 74);
+                text-transform: uppercase;
+            }
+            
+            .position {
+                font-family: 'Lilita One', sans-serif;
+                font-size: 1.2em;
+                text-transform: uppercase;
+                color: black;
+                padding-left: 0;
+            }
+            
+            .accordion, .full-width {
+                width: 100%;
+                margin-bottom: 30px; 
+                flex-direction: column;
+            }
+
+            .session {
+                cursor: pointer;
+            }
+
+            .accordion-visible {
+                display: flex; 
+                padding: 0px;
+            }
+
+            .visible {
+                padding-bottom: 0;
+            }
+            
+            .content {
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height ease-in-out;
+                margin-bottom: 30px;
+                padding: 0px;
+            }
+
+            .content.active {
+                max-height: 10000px;
+            }
+
+            #expand-all {
+            margin-top: 10px;
+            padding: 10px 15px;
+            cursor: pointer;
+            background-color: rgb(51, 71, 74);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            }
+
+        </style>
+
     </head>
 
     <body>
@@ -248,68 +311,6 @@
         </main>
     </body>
     
-    <style>
-        .accordion-area{
-            margin: 20px 0 20px 0;
-        }
-
-        .location {
-            font-family: "Abel", sans-serif;
-            color: rgb(51, 71, 74);
-            text-transform: uppercase;
-        }
-        
-        .position {
-            font-family: 'Lilita One', sans-serif;
-            font-size: 1.2em;
-            text-transform: uppercase;
-            color: black;
-            padding-left: 0;
-        }
-        
-        .accordion, .full-width {
-            width: 100%;
-            margin-bottom: 30px; 
-            flex-direction: column;
-        }
-
-        .session {
-            cursor: pointer;
-        }
-
-        .accordion-visible {
-            display: flex; 
-            padding: 0px;
-        }
-
-        .visible {
-            padding-bottom: 0;
-        }
-        
-        .content {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height ease-in-out;
-            margin-bottom: 30px;
-            padding: 0px;
-        }
-
-        .content.active {
-            max-height: 10000px;
-        }
-
-        #expand-all {
-        margin-top: 10px;
-        padding: 10px 15px;
-        cursor: pointer;
-        background-color: rgb(51, 71, 74);
-        color: white;
-        border: none;
-        border-radius: 5px;
-        }
-
-    </style>
-
     <script>
         // ACCORDION
         function toggleContent(event) {
@@ -344,4 +345,4 @@
     <footer class="footer">
         <p>&#169; Ashley Youna Kang, 2024</p>
     </footer>
-</section>
+</html>
