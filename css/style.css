@@ -671,3 +671,17 @@ footer p {
     text-align: justify;
   }
 }
+
+.bullet {
+  margin-left: 20px;
+  padding-left: 20px;
+  /* list-style-type: disc; */
+  line-height: 1.5;
+  font-family: "Abel", sans-serif;
+}
+
+.bullet ul {
+  margin-left: 20px;
+  padding-left: 20px;
+  list-style-type: disc;
+}

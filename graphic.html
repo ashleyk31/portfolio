@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardia Cancer Data</title>
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="assets/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav>
+      <div class="nav-links">
+        <div class="nav-left">
+          <a href="index.html" >home</a>
+        </div>
+        <div class="nav-center">
+          <a href="work.html" >back to work</a>
+        </div>
+        <div class="nav-right">
+          <a href="https://drive.google.com/file/d/1hsicBomuoD24sT-YjndRco-THaf-kJ_l/view?usp=sharing" target="_blank">resume</a>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="work">
+        <hr class="separator"> 
+        <br>
+        <h2 class = "worktitle">Computer Graphics: Free Scene</h2>
+        <br>
+        <div class = "worksubtitle">Wellesley College - Computer Graphics Spring 2025</div>
+        <br>
+        <div class = "titlestyle">Tools</div><br>
+        <div class="full-width row">
+          <div style="flex: 1; min-width: 300px;">
+            <span class="tool-pill">Three.js</span>
+            <span class="tool-pill">JavaScript</span>
+          </div>
+        </div>
+        <br><br>
+
+        <div class = "titlestyle">Introduction</div>
+        <br>
+        <p style="padding-left: 50px;">
+          This experiment is based on an observational dataset from the Karolinska Institute of 
+          people who were diagnosed with cardia cancer in Sweden. We want to assess whether patients 
+          who received medical treatment from hospitals with high-volume of patients with cardia cancer 
+          have different survival rates than patients who received medical treatment from low-volume hospitals.  
+          This was an individual final project. 
+        </p>
+        <br><br> 
+        <div class = "titlestyle">Assumptions</div>
+        <br><br>
+        <p style="padding-left: 50px;">
+          To conduct this experiment to determine if there’s a causal effect, 
+          we need to check if certain criteria are met. 
+
+          The first criteria is the SUTVA 1 and 2, and by looking at the dataset, both holds. 
+          SUTVA 1 holds because the treatment of whether the patients were diagnosed at a high- 
+          or low-volume hospital is clearly defined by a binary variable, where 1 is a high-volume and 0 is a low-volume hospital. 
+          SUTVA 2 also seems to hold because whether a patient gets diagnosed at a high- or low-volume hospital does not affect 
+          another patient’s potential outcome of the number of years of surviving after diagnosis. 
+          Although some might be concerned about SUTVA 2 because there are limited hospitals and doctors in Sweden, 
+          we are only looking at 158 patients, and the example above is a rare case, 
+          so I think it’s ok to assume that doctors will try their best to diagnose and treat the patient as accurately as possible. 
+          <br><br>
+          We can assume that both SUTVA 1 and 2 hold.  
+          <br><br>
+          We also need to check if we can assume unconfoundedness. 
+          Here, the diagnosing hospital is unconfounded, while the treating hospital is confounded. 
+          If we thought that the treating hospital was unconfounded, then we could have simply done an observational study on treating hospital, 
+          without the instrumental variables step. But since it is confounded, we will go through the following steps. 
+        </p>
+        <br><br>
+        <div class = "titlestyle">Balance Covariates</div>
+        <br><br>
+        <p style="padding-left: 50px;">
+          After cleaning some variables, I tried two methods: 1. estimating propensity scores for each unit in the study 
+          using the fitted values from a regression tree on the FromRuralArea and Male variables and 2. on all variables. 
+          This tree below has a large difference between the active and control for the age variable, 
+          specifically for the propensity scores 0.279 and 0.571. <br>
+          <img src="art/work4-1.png" alt="propensity score 1" style="width: 70%;">
+          <br><br>
+          So, I created another tree using all variables (where R selected the 2 most significant covariates, 
+          which are FromRuralArea and AgeAtDiagnosis), and the covariates were better balanced. 
+          <br>
+          <img src="art/work4-2.png" alt="propensity score 2" style="width: 70%;"><br><br>
+          The mean values of active and control within the subgroups are balanced, so I used these three subclasses to estimate the average causal effect. 
+        </p>
+        <br><br>
+
+        <div class = "titlestyle">Calculate the Average Causal Effect Estimate</div>
+        <br><br>
+        <p style="padding-left: 50px;">
+          To estimate the average causal effect, I first calculated p_c and the estimated ITT to calculate the ITT_c for each of the three subgroups
+          and compared the p_a values in the end. 
+        </p>
+        <br><br>
+        <div class = "titlestyle">Results</div>
+        <br><br>
+        <p style="padding-left: 50px;">
+          For the first subgroup (propensity score = 0.238), the estimated ITT value is 0.075 with p_c equal to 0.75, 
+          leading to an ITT_c of 0.1. <br>
+          For the second group (propensity score = 0.475), the estimated ITT value is 0.0627 with p_c equal to 0.524, 
+          leading to an ITT_c of 0.1196. <br>
+          For the third group (propensity score = 0.658), the estimated ITT value is 0.023 with p_c equal to 0.383, 
+          leading to an ITT_c of 0.06. 
+          <br><br>
+          So, by weighing these subclasses, overall, the point estimate is 0.04200808 with the interval (-0.29, 0.2). 
+          This result means that the effect of being assigned to get treated at a high-volume hospital is 0.04, with a 
+          95% possibility of this effect ranging as low as -0.29 and as high as 0.2. The overall years of survival after 
+          getting diagnosed would improve by 0.28 if patients with cardia cancer were treated at high-volume hospitals. 
+          This is the effect that the doctors would be interested in because they can control whether they open a spot 
+          in the hospital to treat a cardia cancer patient.   
+        </p>
+        <br><br>
+        <div class = "titlestyle">Limitations</div>
+        <br><br>
+        <p style="padding-left: 50px;">
+          The limitation of this experiment is the lack of information and details on the patients. 
+          Specifically, for the YearsSurvivingAfterDiagnosis variable, are we assuming that everyone is getting the treatment? 
+          When are they getting treated? If we know they survived for a year after being diagnosed, are we assuming all 
+          patients were treated within a year? Why would we be counting the number of years of surviving after getting 
+          diagnosed and not after getting treated if we want to see the effect of getting treated at a high-volume hospital 
+          versus a low-volume hospital? Some clarifications would be needed, and there were multiple assumptions made throughout. 
+          So, making sure that those are safe assumptions to make would be essential to make this result and interpretation 
+          more accurate.  
+        </p>
+        <br>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>&#169; Ashley Youna Kang, 2024</p>
+    </footer>
+  </body>
+
+</html>
