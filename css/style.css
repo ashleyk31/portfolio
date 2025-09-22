@@ -340,39 +340,43 @@ cursor: default;
 
 /* ABOUT SECTION */
 
-.about {
-  justify-content: center;
-  flex-direction: row;
+.about-grid {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  align-items: center; /* vertically center text and image */
+  gap: 10px;
+}
+
+.about-text {
   display: flex;
-  width: 100%;
-  flex: 1;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: right;
 }
 
-img.profile {
-  width: 20%;
-  border-radius: 40%;
-  /* display: block;
-  margin: 0 auto; */
+.about-text h3 {
+  margin: 0;
+  font-size: 1.5rem;
 }
 
-.container#about {
+.about-text h2 {
+  margin: 5px 0 0 0;
+  font-size: 2.5rem;
+}
+
+.about-image {
   display: flex;
-  align-items: center;
-  gap: 20px;
-  padding: 0 20vh 0 20vh;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
-.container#about p {
-  flex: 1;
-  font-size: large;
-  font-family: "Nova Mono";
-  line-height: 1.5;
-}
-
-.container#about img {
-  flex: 1;
+.about-image img {
   max-width: 300px;
+  width: 100%;
   height: auto;
+  border-radius: 25px;
+  display: block;
+  margin: 0 auto;
 }
 
 /* GALLERY SECTION FOR DIGITAL PAGE */
