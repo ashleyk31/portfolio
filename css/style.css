@@ -28,14 +28,9 @@ main {
     font-size: 13px;
 }
 
-/* .main body {
-    height: 100vh;
-} */
-
-
 body.main {
     margin: 0;
-    height: 100vh;           /* full viewport height */
+    height: 100vh;
     display: flex;
     flex-direction: column;  /* stack nav/main/footer */
     background-color: rgb(51, 71, 74);
@@ -93,7 +88,7 @@ footer img:last-of-type {
 nav {
     padding: 1rem;
     display: flex;
-    background-color: rgb(51, 71, 74);
+    background-color: rgb(119, 148, 152);
     position: relative;
     z-index: 1000;
 }
