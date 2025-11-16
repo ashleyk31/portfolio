@@ -36,6 +36,7 @@ body.main {
     background-color: rgb(51, 71, 74);
     color: rgb(224, 231, 233);
     font-size: 13px;
+    overflow: hidden; 
 }
 
 .main a,
