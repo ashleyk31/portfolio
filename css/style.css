@@ -89,7 +89,7 @@ footer img:last-of-type {
 nav {
     padding: 1rem;
     display: flex;
-    background-color: rgb(119, 148, 152);
+    background-color: rgb(51, 71, 74);
     position: relative;
     z-index: 1000;
 }
