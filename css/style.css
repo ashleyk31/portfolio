@@ -100,7 +100,7 @@ footer img:last-of-type {
 /* nav bar styling */
 
 nav {
-    position: ssticky;
+    position: fixed;
     justify-content: space-between;
     width: 100%;
     padding: 1rem;
@@ -178,6 +178,7 @@ nav {
 
 main.work-page {
     background-color: rgb(224, 231, 233);
+    margin-top: 80px;
 }
 
 .work-page h1 {
