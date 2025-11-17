@@ -3,21 +3,23 @@
 /* main font */
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Tektur:wght@400..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-
-
-* {
+*:not(nav) {
     font-family: 'Ubuntu', 'Source Sans 3';
     margin: 0px;
 }
 
-
+/* ============================================================================== */
+/* ============================================================================== */
 /* colors */
 /* dark:  rgb(51, 71, 74); */
 /* light:  rgb(119, 148, 152); */
 /* white: rgb(224, 231, 233) */
 
+/* ============================================================================== */
+/* ============================================================================== */
+/* index page styling */
 
-main {
+body.main main {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,7 +38,7 @@ body.main {
     background-color: rgb(51, 71, 74);
     color: rgb(224, 231, 233);
     font-size: 13px;
-    overflow: hidden; 
+    /* overflow: hidden;  */
 }
 
 .main a,
@@ -64,14 +66,21 @@ img {
 }
 
 footer {
+    margin-top: auto; 
+    padding: 1rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10%;
+    background-color: rgb(51, 71, 74); 
 }
 
 footer p {
     grid-column: 1/3;
+    color: rgb(224, 231, 233);
+    text-align: center;
+    font-size: 13px;
 }
+
 
 footer img {
     width: 10%;
@@ -86,11 +95,17 @@ footer img:last-of-type {
     justify-self: start;
 }
 
+/* ============================================================================== */
+/* ============================================================================== */
+/* nav bar styling */
+
 nav {
+    position: ssticky;
+    justify-content: space-between;
+    width: 100%;
     padding: 1rem;
     display: flex;
     background-color: rgb(51, 71, 74);
-    position: relative;
     z-index: 1000;
 }
 
@@ -106,7 +121,6 @@ nav {
     z-index: 999;
     display: flex;
     flex-direction: column;
-    /* padding-top: 100px; */
     padding: 100px 20px 20px;
     align-items: center
 }
@@ -149,3 +163,58 @@ nav {
 .ham-menu.active span:nth-child(3) {
     transform: rotate(-45deg) translate(7px, -7px);
 }
+
+.nav-logo {
+    height: 50px;
+    width: 50px;
+    object-fit: contain;
+    cursor: pointer;
+    filter: invert(1);
+}
+
+/* ============================================================================== */
+/* ============================================================================== */
+/* other pages */
+
+main.work-page {
+    background-color: rgb(224, 231, 233);
+}
+
+.work-page h1 {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.work-page a {
+    color: rgb(51, 71, 74);
+    text-decoration: none;
+}
+
+.grid-view {
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+
+.grid-view > *:nth-child(2n) {
+    margin-bottom: 50px;
+}
+
+.grid-view2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+main.work-page {
+    flex: 1;
+    padding: 10px 2rem;
+}
+

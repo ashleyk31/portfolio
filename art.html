@@ -1,74 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>art</title>
-      <link rel="stylesheet" href="css/html5reset.css">
-      <link rel="stylesheet" href="css/style.css">
-      <link rel="icon" href="assets/favicon.ico">
-      <link href="https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap" rel="stylesheet">
-  </head>
-
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art | Ashley Kang</title>
+    <!-- <link rel="stylesheet" href="css/html5reset.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="css/style_hover.css">
+</head>
+<body>
+    <div class="off-screen">
+        <button type="button" class="button btn-primary" onclick="window.location.href='work.html'">
+            work
+        </button>
+        <button type="button" class="button btn-primary" onclick="window.location.href='classes.html'">
+            classes
+        </button>
+        <button type="button" class="button btn-primary" onclick="window.location.href='art.html'">
+            art
+        </button>
+        <button type="button" class="button btn-primary" onclick="window.location.href='aboutme.html'">
+            about me
+        </button>
+    </div>
+    
     <nav>
-      <div class="nav-links">
-        <div class = "nav-left">
-          <a href="index.html" >home</a>
+        <div class="ham-menu">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-        <div class="nav-right">
-          <a href="files/KangA_CV.pdf" target="_blank">resume</a>
-        </div>
-      </div>
     </nav>
-    <main>
-      <!-- ART -->
-      <h1 class="title">Art</h1>
-      <br><br><br>
-      
-      <section id="art">
-        <div class="grid-container-work">
-          <div class="grid-item-work">
-            <a class = "worklink"  href="identity.html">
-              <img src="art/cover_identity.png" alt="Cover image for the identity project">
-            </a>
-            <div>
-              <a class = "worklink" href="identity.html"><h2 class = "worklink">Struggle For Identity</h2></a>
-            </div>
-          </div>
-          <br><br>
-          <div class="grid-item-work">
-            <a class = "worklink"  href="culture.html">
-              <img src="art/cover_culture.png" alt="Cover image for the culture project">
-            </a>
-            <div>
-              <a class = "worklink" href="culture.html"><h2 class = "worklink">Culture</h2></a>
-            </div>
-          </div>
-          <br><br>
-          <div class="grid-item-work">
-            <a class = "worklink"  href="hands.html">
-              <img src="art/cover_hands.png" alt="Cover for the hands project">
-            </a>
-            <div>
-              <a class = "worklink" href="hands.html"><h2 class = "worklink">Hands</h2></a>
-            </div>
-          </div>
-          <br><br>
-          <div class="grid-item-work">
-            <a class = "worklink"  href="digital.html">
-              <img src="art/cover_model.png" alt="Cover for the digital project">
-            </a>
-            <div>
-              <a class = "worklink" href="digital.html"><h2 class = "worklink">Digital Art</h2></a>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
+    
+    <main class="work-page">
+        <h1>Art</h1>
+        <div class="grid-view2">
 
-    <footer class="footer">
-      <p>&#169; Ashley Youna Kang, 2024</p>
+            <!-- first project -->
+            <a href="identity.html">
+                <h2>Struggle For Identity</h2>
+                <img src="art/cover_identity.png" alt="graphic desitgn project">
+            </a>
+
+            <!-- second project -->
+            <a href="culture.html">
+                <h2>Culture</h2>
+                <img src="art/cover_culture.png" alt="graphic desitgn project">
+            </a>
+
+            <!-- third project -->
+            <a href="hands.html">
+                <h2>Hands</h2>
+                <img src="art/cover_hands.png" alt="graphic desitgn project">
+            </a>
+
+            <!-- fourth project -->
+            <a href="digital.html">
+                <h2>Digital Art</h2>
+                <img src="art/cover_model.png" alt="graphic desitgn project">
+            </a>
+        </div>
+    </main>
+    <footer>
+        <p>&#169; Ashley Youna Kang, <span id="year"></span></p>
+        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="window.open('https://www.linkedin.com/in/-ashleykang/')">
+        <img src="./assets/instagram.png" alt="My Instagram profile" class="icon" onclick="window.open('https://www.instagram.com/samweolizi/')">
     </footer>
-  </body>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+</body>
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+<script src="script/script_hover.js"></script>
+<script src="script/main.js"></script>
 </html>
