@@ -1,112 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personalization Factors on TikTok</title>
-    <link rel="stylesheet" href="css/html5reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="assets/favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap" rel="stylesheet">  
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Work | Ashley Kang</title>
+    <!-- <link rel="stylesheet" href="css/html5reset.css"> -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="assets/favicon.ico" />
+    <link rel="stylesheet" href="css/style_hover.css" />
   </head>
-
   <body>
+    <div class="off-screen">
+      <button
+        type="button"
+        class="button btn-primary"
+        onclick="window.location.href='work.html'"
+      >
+        work
+      </button>
+      <button
+        type="button"
+        class="button btn-primary"
+        onclick="window.location.href='classes.html'"
+      >
+        classes
+      </button>
+      <button
+        type="button"
+        class="button btn-primary"
+        onclick="window.location.href='art.html'"
+      >
+        art
+      </button>
+      <button
+        type="button"
+        class="button btn-primary"
+        onclick="window.location.href='aboutme.html'"
+      >
+        about me
+      </button>
+    </div>
+
     <nav>
-      <div class="nav-links">
-        <div class="nav-left">
-          <a href="index.html" >home</a>
-        </div>
-        <div class="nav-center">
-          <a href="work.html" >work</a>
-        </div>
-        <div class="nav-right">
-          <a href="files/KangA_CV.pdf" target="_blank">resume</a>
-        </div>
+      <a href="index.html" class="logo-link">
+        <img src="assets/favicon.ico" alt="Home" class="nav-logo" />
+      </a>
+      <div class="ham-menu">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </nav>
 
-    <main>
-      <section class="work">
-        <hr class="separator"> 
-        <br>
-        <h1 class = "worktitle">Personalization Factors on TikTok</h1>
-        <br>
-        <div class = "worksubtitle">Wellesley College - Data Science and the Web Spring 2024</div>
-        <br><br><br><br>
-        <div class = "titlestyle">Tools</div><br>
-        <div class="full-width row">
-          <div style="flex: 1; min-width: 300px;">
-                <span class="tool-pill">Selenium</span>
-                <span class="tool-pill">Jaccard Index</span>
-                <span class="tool-pill">Time Series</span>
-                <span class="tool-pill">Seaborn</span>
-                <span class="tool-pill">Pandas</span>
-            </div>
-        </div>
-        <br><br>
-        <div class = "titlestyle">Introduction</div>
-        <br>
-        <p style="padding-left: 50px;">
-          With over one billion users, TikTok is one of the most popular social media platforms of all time. 
-          TikTok uses a specific and unique algorithm to introduce the videos on a user's “For You Page”, which 
-          further individualizing user experiences. Given the extreme popularity and influence of the application, 
-          it is important to understand the workings of the recommendation system algorithm. 
-          <br><br>
-          We aimed to recreate parts of the work of “An Empirical Investigation of Personalization Factors on TikTok” 
-          by Maximilian Boeker and Aleksandra Urman (University of Zurich) with multiple teams. While other teams 
-          focused on understanding the follow and like features, our team served as the control, to assess whether the 
-          <span style="font-size: larger; text-decoration: underline;">language</span> of the website could affect 
-          the content the algorithm suggests on the For You Page.
-          <br><br>
-          <p style="padding-left: 50px; font-size: larger;"><strong>Role : Project Manager, Data Analyst, Data Scientist</strong> </p>
-          <p style="padding-left: 50px;">The project consisted of five members. We collaborated throughout the entire process of brainstorming, 
-            data collecting, and data analyzing for a month. Ultimately, we presented our findings in front of the class.</p>
-        <br><br>
-        <div class = "titlestyle">My Contribution</div>
-        <br>
-        <div style="color: black;">
-          <p style="padding-left: 50px;">
-            For this project, our task was to scrape data from TikTok and analyze it. 
-            Each team member was responsible for a different language, and I handled the German language. 
-            I scraped the website 20 times per account, each time retrieving different content, while some recommendations were repeated, which is what we expected to happen. 
-            Using web scraping techniques, I collected data from two TikTok accounts by extracting information about the
-            recommended videos on the For You Page, including the author, time, tags, and descriptions.
-            <br><br>
-            Once everyone had gathered their respective data, we combined the information and performed an analysis to identify 
-            the top hashtags across all six languages, which is displayed below. 
-            For my part, I calculated the Jaccard Index for the German data, which resulted in an index value of 0.16. 
-            Notably, the trend showed a decrease in the index over time, indicating that TikTok's algorithm tends to 
-            recommend more personalized content based on a user's interactions and behavior on the platform.
-          </p>
-        </div>
-        <br><br>
-        <div class = "titlestyle">Visualization</div>
-        <br>
-        <p style="padding-left: 90px; font-size: 1.3em;">Figure 1: Table with the Top Size Hashtags Across the Six Languages</p>
-        <br>
-        <div class="article-container" style="width: 90%; padding-left: 10%;">
-          <img src="art/work2figure.png" alt = "poster">
-        </div>
-        <br>
-        <hr class="separator">
-        <p style="padding-left: 90px; font-size: 1.3em;">Figure 2: Graph for the German Language Analysis</p>
-        <br>
-        <div class="article-container" style="width: 70%; padding-left: 10%;">
-          <img src="art/work2-slide1.jpg" alt = "jaccard index1">
-        </div>
-        <br>
-        <hr class="separator">
-        <p style="padding-left: 90px; font-size: 1.3em;">Figure 3: Visualization for the German Language Jaccard Index</p>
-        <br>
-        <div class="article-container" style="width: 70%; padding-left: 10%;">
-          <img src="art/work2-slide2.jpg" alt = "jaccard index1">
-        </div>
-        <br>   
+    <main class="work-page grid-view-main">
+      <h1>Personalization Factors on TikTok</h1>
+      <div>
+        <h4>[ TIMELINE ]</h4>
+        <p>August 2023 - December 2023</p>
+      </div>
 
-        <footer class="footer">
-          <p>&#169; Ashley Youna Kang, 2024</p>
-        </footer>
-      </section>
+      <div>
+        <h4>[ TOOLS ]</h4>
+        <p>Selenium</p>
+        <p>Jaccard Index</p>
+        <p>Time Series</p>
+        <p>Seaborn</p>
+        <p>Pandas</p>
+      </div>
+
+      <div>
+        <h4>[ STORY ]</h4>
+        <p>
+            My 5 teammates and I replicated a research from the
+            University of Zurich, investigating how TikTok's recommendation
+            algorithm personalizes content across different languages. We
+            successfully scraped and analyzed data from six language settings,
+            serving as the control group to isolate whether language alone
+            influences the For You Page—revealing that TikTok's algorithm
+            increasingly personalizes content over time, with Jaccard Index values
+            decreasing as user sessions progress. My role as Project Manager and
+            Data Analyst focused on German-language data collection,
+            cross-language analysis, and similarity metrics. This case study
+            emphasizes the web scraping methodology I implemented, the Jaccard
+            Index calculations I performed, and the coordination strategies that
+            unified our team's multilingual dataset into coherent findings.
+        </p>
+      </div>
+
+      <h3>Introduction</h3>
+      <p>
+        With over one billion users, TikTok is one of the most popular social
+        media platforms of all time. TikTok uses a specific and unique algorithm
+        to introduce the videos on a user's “For You Page”, which further
+        individualizing user experiences. Given the extreme popularity and
+        influence of the application, it is important to understand the workings
+        of the recommendation system algorithm. We aimed to recreate parts of
+        the work of “An Empirical Investigation of Personalization Factors on
+        TikTok” by Maximilian Boeker and Aleksandra Urman (University of Zurich)
+        with multiple teams. While other teams focused on understanding the
+        follow and like features, our team served as the control, to assess
+        whether the language of the website could affect the content the
+        algorithm suggests on the For You Page.
+      </p>
+
+      <h3>My Contribution</h3>
+      <p>
+        For this project, our task was to scrape data from TikTok and analyze
+        it. Each team member was responsible for a different language, and I
+        handled the German language. I scraped the website 20 times per account,
+        each time retrieving different content, while some recommendations were
+        repeated, which is what we expected to happen. Using web scraping
+        techniques, I collected data from two TikTok accounts by extracting
+        information about the recommended videos on the For You Page, including
+        the author, time, tags, and descriptions. Once everyone had gathered
+        their respective data, we combined the information and performed an
+        analysis to identify the top hashtags across all six languages, which is
+        displayed below. For my part, I calculated the Jaccard Index for the
+        German data, which resulted in an index value of 0.16. Notably, the
+        trend showed a decrease in the index over time, indicating that TikTok's
+        algorithm tends to recommend more personalized content based on a user's
+        interactions and behavior on the platform.
+      </p>
+
+      <h3>Visualization</h3>
+      <p>Figure 1: Table with the Top Size Hashtags Across the Six Languages</p>
+      <img src="art/work2figure.png" alt="poster" />
+      <p>Figure 2: Graph for the German Language Analysis</p>
+      <img src="art/work2-slide1.jpg" alt="jaccard index1" />
+      <p>Figure 3: Visualization for the German Language Jaccard Index</p>
+      <img src="art/work2-slide2.jpg" alt="jaccard index1" />
     </main>
+    <footer>
+      <p>&#169; Ashley Youna Kang, <span id="year"></span></p>
+      <img
+        src="./assets/linkedin.png"
+        alt="My LinkedIn profile"
+        class="icon"
+        onclick="window.open('https://www.linkedin.com/in/-ashleykang/')"
+      />
+      <img
+        src="./assets/instagram.png"
+        alt="My Instagram profile"
+        class="icon"
+        onclick="window.open('https://www.instagram.com/samweolizi/')"
+      />
+    </footer>
+    <script>
+      document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
   </body>
+  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="script/script_hover.js"></script>
+  <script src="script/main.js"></script>
 </html>

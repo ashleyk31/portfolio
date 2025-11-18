@@ -1,97 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Women in Government</title>
-      <link rel="stylesheet" href="css/html5reset.css">
-      <link rel="stylesheet" href="css/style.css">
-      <link rel="icon" href="assets/favicon.ico">
-      <link href="https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Work | Ashley Kang</title>
+    <!-- <link rel="stylesheet" href="css/html5reset.css"> -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="assets/favicon.ico" />
+    <link rel="stylesheet" href="css/style_hover.css" />
   </head>
-
   <body>
+    <div class="off-screen">
+      <button
+        type="button"
+        class="button btn-primary"
+        onclick="window.location.href='work.html'"
+      >
+        work
+      </button>
+      <button
+        type="button"
+        class="button btn-primary"
+        onclick="window.location.href='classes.html'"
+      >
+        classes
+      </button>
+      <button
+        type="button"
+        class="button btn-primary"
+        onclick="window.location.href='art.html'"
+      >
+        art
+      </button>
+      <button
+        type="button"
+        class="button btn-primary"
+        onclick="window.location.href='aboutme.html'"
+      >
+        about me
+      </button>
+    </div>
+
     <nav>
-      <div class="nav-links">
-        <div class="nav-left">
-          <a href="index.html" >home</a>
-        </div>
-        <div class="nav-center">
-          <a href="work.html" >back to work</a>
-        </div>
-        <div class="nav-right">
-          <a href="files/KangA_CV.pdf" target="_blank">resume</a>
-        </div>
+      <a href="index.html" class="logo-link">
+        <img src="assets/favicon.ico" alt="Home" class="nav-logo" />
+      </a>
+      <div class="ham-menu">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </nav>
 
-    <main>
-      <section class="work">
-        <hr class="separator"> 
-        <br>
-        <h1 class = "worktitle">Women in Government and Carbon Emissions</h1><br>
-        <h2 class = "worktitle" style="font-size: 2em; font-style: italic;">Exploring a Country's Relationship Between Variables</h2>
-        <br>
-        <div class = "worksubtitle">Wellesley College - Applied Data Analysis and Statistical Inference Fall 2023</div>
-        <br><br><br><br>
-        <div class = "titlestyle">Tools</div>
-        <br>
-        <div class="full-width row">
-          <div style="flex: 1; min-width: 300px;">
-            <span class="tool-pill">R</span>
-            <span class="tool-pill">ggplot</span>
-            <span class="tool-pill">ANOVA</span>
-          </div>
-        </div>
-        <br><br>
-        
-        <div class = "titlestyle">Overview</div>
-        <br>
-        <div style="color: black;">
-          <p style="padding-left: 50px;">
-          Since the 1970's, global carbon emissions have been increasing, contributing to global warming. 
-          The amount of carbon each country emits is regulated by their parliament. 
-          Yet, there is hardly any research on how gender identity affects the attitudes surrounding 
-          climate change which may pertain to how a country decides to handle their carbon emissions. 
-          Most studies focus on other variables, but, we know men and women experience stem education 
-          and other social factors differently; meaning concerns that reflect their climate change attitude may differ. 
-          So our goal was to explore the possible relationship between women's representation in office and the way 
-          a country handles climate issues. 
-          <br><br>
-          We were able to conduct statistical tests to identify the correlation between the amount of CO2 a country emits 
-          and the percentage of women in their parliament. 
-          </p>
-          <br>
-        
-          <p style="padding-left: 50px; font-size: larger;"><strong>Role : Data Analyst</strong> </p>
-          <p style="padding-left: 50px;">The project consisted of four members. We collaborated throughout the entire process of brainstorming, researching, and analyzing for a month. Ultimately, we presented our findings in front of the class and other professors.</p>
-        </div>
-        <br>
-        <div class = "titlestyle">My Contribution</div>
-        <br>
-        <div style="color: black;">
-          <p style="padding-left: 50px;">
-            I played a key role in the data cleaning process by identifying and addressing missing data. 
-            This involved checking for missing values and determining the best methods to handle them. 
-            Additionally, I removed duplicates to ensure data integrity. 
-            Our project utilized two datasets, which I successfully merged for comprehensive analysis. 
-            Furthermore, I was responsible for writing the background section of the paper and conducting the ANOVA 
-            and regression analyses to obtain the final results, including the necessary p-values.
-          </p>
+    <main class="work-page grid-view-main">
+        <h1>
+            [Women in Government and Carbon Emissions] Exploring a Country's
+            Relationship Between Variables
+        </h1>
+        <div>
+            <h4>[ TIMELINE ]</h4>
+            <p>August 2023 - December 2023</p>
         </div>
 
-        <br>
-        <div class = "titlestyle">Visualization / Final Poster</div>
-        <br>
-        <div class="article-container">
-          <img src="art/work1_poster.png" alt = "poster" style="gap: 30px; border: rgb(187, 207, 209) 0.05rem solid; border-radius: 20px; padding: 20px;">
+        <div>
+            <h4>[ TOOLS ]</h4>
+            <p>R</p>
+            <p>ggplot</p>
+            <p>ANOVA</p>
         </div>
-        <br>  
-      </section>
+
+        <div>
+            <h4>[ STORY ]</h4>
+            <p>
+                Since the 1970's, global carbon emissions have been increasing,
+                contributing to global warming. The amount of carbon each country emits
+                is regulated by their parliament. Yet, there is hardly any research on
+                how gender identity affects the attitudes surrounding climate change
+                which may pertain to how a country decides to handle their carbon
+                emissions. Most studies focus on other variables, but, we know men and
+                women experience stem education and other social factors differently;
+                meaning concerns that reflect their climate change attitude may differ.
+                So my three teammates and I wanted to explore the possible relationship between women's
+                representation in office and the way a country handles climate issues.
+                We were able to conduct statistical tests to identify the correlation
+                between the amount of CO2 a country emits and the percentage of women in
+                their parliament.
+            </p>
+        </div>
+        <h3>Visualization / Final Poster</h3>
+        <img src="art/work1_poster.png" alt="poster" />
+
+        <h3>My Contribution</h3>
+        <p>
+            I played a key role in the data cleaning process by identifying and
+            addressing missing data. This involved checking for missing values and
+            determining the best methods to handle them. Additionally, I removed
+            duplicates to ensure data integrity. Our project utilized two datasets,
+            which I successfully merged for comprehensive analysis. Furthermore, I
+            was responsible for writing the background section of the paper and
+            conducting the ANOVA and regression analyses to obtain the final
+            results, including the necessary p-values.
+        </p>
+
+      
     </main>
-      <footer class="footer">
-        <p>&#169; Ashley Youna Kang, 2024</p>
-      </footer>
-    
+    <footer>
+      <p>&#169; Ashley Youna Kang, <span id="year"></span></p>
+      <img
+        src="./assets/linkedin.png"
+        alt="My LinkedIn profile"
+        class="icon"
+        onclick="window.open('https://www.linkedin.com/in/-ashleykang/')"
+      />
+      <img
+        src="./assets/instagram.png"
+        alt="My Instagram profile"
+        class="icon"
+        onclick="window.open('https://www.instagram.com/samweolizi/')"
+      />
+    </footer>
+    <script>
+      document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
   </body>
+  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="script/script_hover.js"></script>
+  <script src="script/main.js"></script>
 </html>

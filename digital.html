@@ -1,131 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>digital</title>
-      <link rel="stylesheet" href="css/html5reset.css">
-      <link rel="stylesheet" href="css/style.css">
-      <link rel="icon" href="assets/favicon.ico">
-      <link href="https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap" rel="stylesheet">
-  </head>
-
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art | Ashley Kang</title>
+    <!-- <link rel="stylesheet" href="css/html5reset.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="css/style_hover.css">
+</head>
+<body>
+    <div class="off-screen">
+        <button type="button" class="button btn-primary" onclick="window.location.href='work.html'">
+            work
+        </button>
+        <button type="button" class="button btn-primary" onclick="window.location.href='classes.html'">
+            classes
+        </button>
+        <button type="button" class="button btn-primary" onclick="window.location.href='art.html'">
+            art
+        </button>
+        <button type="button" class="button btn-primary" onclick="window.location.href='aboutme.html'">
+            about me
+        </button>
+    </div>
+    
     <nav>
-      <div class="nav-links">
-        <div style="width: 33%; float:left">
-          <a href="index.html" >home</a>
+        <a href="index.html" class="logo-link">
+            <img src="assets/favicon.ico" alt="Home" class="nav-logo">
+        </a>
+        <div class="ham-menu">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-        <div class="nav-center">
-          <a href="art.html" >back to art</a>
-        </div>
-        <div class="nav-right">
-          <a href="files/KangA_CV.pdf" target="_blank">resume</a>
-        </div>
-      </div>
     </nav>
-
-    <main>
-      <h1 class="title">Digital Art</h1>
-      <br>
-      <p style="text-align: center;">Designed with Autodesk Maya -- Year 2024</p>
-      <section>
-        <br>
-        <div class="gallery-container" style="gap: 30px">
-          <div class="gallery-item">
-            <div>
-              <img src="art/3dmodel_airballoon_front.jpeg" alt="Airship Model Front View">
-            </div>
-            <div>
-              <p>Airship Model Front View</p>
-            </div>
-          </div>
-          
-          <div class="gallery-item">
-            <div>
-              <img src="art/3dmodel_airballoon_zoom.jpeg" alt="Airship Model Zoomed">
-            </div>
-            <div>
-              <p>Airship Model Zoomed</p>
-            </div>
-          </div>
-
-          <div class="gallery-item">
-            <div>
-              <img src="art/3dmodel_head.jpeg" alt="Head Model">
-            </div>
-            <div>
-              <p>Head Model</p>
-            </div>
-          </div>
-          
-          <div class="gallery-item">
-            <div>
-              <img src="art/3dmodel_kirby.jpeg" alt="Modeling Object Cartoon Cut">
-            </div>  
-            <div>
-              <p>Modeling Object (scene of a comic strip)</p>
-            </div>
-          </div>
-
-          <div class="gallery-item">
-            <div>
-              <img src="art/3dmodel_model2.jpeg" alt="Modeling Object Cartoon Cut 2">
-            </div>
-            <div>
-              <p>Modeling Object 2 (scene of a comic strip)</p>
-            </div>
-          </div>
-
-          <div class="gallery-item">
-            <div>
-              <img src="art/3dmodel_shading1.jpg" alt="Shading 1">
-            </div>
-            <div>
-              <p>Shade and Texture (Checkerboard)</p>
-            </div>
-          </div>
-
-          <div class="gallery-item">
-            <div>
-              <img src="art/3dmodel_shading2.jpg" alt="Shading 2">
-            </div>
-            <div>
-              <p>Shade and Texture (Wood and Glass)</p>
-            </div>
-          </div>
-
-          <div class="gallery-item">
-            <div>
-              <img src="art/3dmodel_shading3.jpg" alt="Shading 3">
-            </div>
-            <div>
-              <p>Shade and Texture (Glass)</p>
-            </div>
-          </div>
-
-          <div class="gallery-item">
-            <div>
-              <img src="art/3dmodel_texture.jpg" alt="Texture">
-            </div>
-            <div>
-              <p>Texture</p>
-            </div>
-          </div>
-
-          <div class="gallery-item">
-            <div>
-              <img src="art/3dmodel_lighting.jpg" alt="Lighting">
-            </div>
-            <div>
-              <p>Lighting</p>
-            </div>
-          </div>
+    
+    <main class="work-page">
+        <div class="grouping">
+            <h1>Digital Art</h1>
+            <p>Year 2024</p>
+            <p>Designed with Autodesk Maya</p>
         </div>
-      </section>
+        <div class="grid-view3">
+            
+            <img src="art/3dmodel_airballoon_front.jpeg" alt="Airship Model Front View">
+            <p>Airship Model Front View</p>
+            <img src="art/3dmodel_airballoon_zoom.jpeg" alt="Airship Model Zoomed">
+            <p>Airship Model Zoomed</p>
+            <img src="art/3dmodel_head.jpeg" alt="Head Model">
+            <p>Head Model</p>
+            <img src="art/3dmodel_kirby.jpeg" alt="Modeling Object Cartoon Cut">
+            <p>Modeling Object (scene of a comic strip)</p>
+            <img src="art/3dmodel_model2.jpeg" alt="Modeling Object Cartoon Cut 2">
+            <p>Modeling Object 2 (scene of a comic strip)</p>
+            <img src="art/3dmodel_shading1.jpg" alt="Shading 1">
+            <p>Shade and Texture (Checkerboard)</p>
+            <img src="art/3dmodel_shading2.jpg" alt="Shading 2">
+            <p>Shade and Texture (Wood and Glass)</p>
+            <img src="art/3dmodel_shading3.jpg" alt="Shading 3">
+            <p>Shade and Texture (Glass)</p>
+            <img src="art/3dmodel_texture.jpg" alt="Texture">
+            <p>Texture</p>
+            <img src="art/3dmodel_lighting.jpg" alt="Lighting">
+            <p>Lighting</p>
+        </div>
     </main>
-    <footer class="footer">
-      <p>&#169; Ashley Youna Kang, 2024</p>
+    <footer>
+        <p>&#169; Ashley Youna Kang, <span id="year"></span></p>
+        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="window.open('https://www.linkedin.com/in/-ashleykang/')">
+        <img src="./assets/instagram.png" alt="My Instagram profile" class="icon" onclick="window.open('https://www.instagram.com/samweolizi/')">
     </footer>
-  </body>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+</body>
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+<script src="script/script_hover.js"></script>
+<script src="script/main.js"></script>
 </html>
