@@ -1,52 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contact</title>
-    <link rel="stylesheet" href="css/html5reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="assets/favicon.ico">
-</head>
-
-<body style="padding: 10vh 250px 10vh 250px;">
-    <nav>
-      <div class="nav-links">
-        <div class="nav-left">
-          <a href="index.html" >home</a>
-        </div>
-        <div class="nav-right">
-          <a href="files/KangA_CV.pdf", target = "_blank">resume</a>
-        </div>
-      </div>
-    </nav>
-    <br><br>
-
-
-    <div class="about-section" id="about">
-      <div class="about-grid">
-        <div class="about-text">
-          <br><br><br><br>
-          <h1 style="font-size: larger;">hi! my name is</h3>
-          <br>
-          <h1 class="title">Ashley</h1>
-          <br><br><br>
-          <p style="line-height: 1.5; text-align: right;">
-            I am a recent graduate from Wellesley College currently pursuing a master’s degree at University of Michigan School of Information, focusing on big data analytics. I am passionate about cybersecurity, user research, and human-computer interaction, and I aspire to work as a data analyst in the healthcare field! In my free time, I like to travel, design postcards, and make scrapbooks. 
-            <br><br>
-            Thanks for stopping by!
-          </p>
-        </div>
-        <div class="about-image">
-          <img src="assets/profile.png" alt="image of Ashley Kang">
-        </div>
-      </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Work | Ashley Kang</title>
+    <!-- <link rel="stylesheet" href="css/html5reset.css"> -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="assets/favicon.ico" />
+    <link rel="stylesheet" href="css/style_hover.css" />
+  </head>
+  <body>
+    <div class="off-screen">
+      <button
+        type="button"
+        class="button btn-primary"
+        onclick="window.location.href='work.html'"
+      >
+        work
+      </button>
+      <button
+        type="button"
+        class="button btn-primary"
+        onclick="window.location.href='classes.html'"
+      >
+        classes
+      </button>
+      <button
+        type="button"
+        class="button btn-primary"
+        onclick="window.location.href='art.html'"
+      >
+        art
+      </button>
+      <button
+        type="button"
+        class="button btn-primary"
+        onclick="window.location.href='aboutme.html'"
+      >
+        about me
+      </button>
     </div>
 
-    <br><br><br><br><br><br><br><br><br>
+    <nav>
+      <a href="index.html" class="logo-link">
+        <img src="assets/favicon.ico" alt="Home" class="nav-logo" />
+      </a>
+      <div class="ham-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
 
-    <footer class="footer">
-      <p>&#169; Ashley Youna Kang, 2025</p>
+    <main class="work-page profile grid-view-profile">
+      <img  src="assets/profile.png" alt="" />
+      <!-- <h1 class="marquee">ASHLEY KANG</h1> -->
+      <p >
+        Hi! My name is Ashley, and I am a recent graduate from Wellesley College
+        currently pursuing a master’s degree at University of Michigan School of
+        Information, focusing on big data analytics. I am passionate about
+        cybersecurity, user research, and human-computer interaction, and I
+        aspire to work as a data analyst in the healthcare field! In my free
+        time, I like to travel, design postcards, and make scrapbooks.
+      </p>
+
+      <h3>Background</h3>
+      <p >
+        Since my first (and only) T1-84 graphing calculator, I've been obsessed
+        with finding patterns in numbers. Now, I combine my data analytics
+        education from Wellesley College and the University of Michigan with
+        insights from my research work to transform messy datasets into
+        compelling narratives. It is my goal to ensure data tells stories that
+        matter, create genuinely impactful insights both on screen and in
+        boardrooms, and make people say "ohhh, that makes sense!" from time to
+        time.
+      </p>
+
+      <h3>Experience</h3>
+      <div class="buttons">
+        <a href="files/KangA_CV.pdf">
+          <button >view resume</button>
+        </a>
+        <a href="https://www.linkedin.com/in/-ashleykang/">
+          <button >view linkedin</button>
+        </a>
+      </div>
+      <div>
+        <p>Graduate Student Instructor</p>
+        <p>@ University of Michigan Ann Arbor</p>
+        <p>2025 - NOW</p>
+        <p>
+          Graduate Student Instructor for QMSS 201 Intro to Quantitative Methods
+          in the Social Sciences
+        </p>
+
+        <p>Data Analyst</p>
+        <p>@ Wellesley College</p>
+        <p>2025</p>
+        <p>
+          Conducted analysis of Bluebike usage data to identify key factors
+          influencing station popularity
+        </p>
+
+        <p>Mechanical Engineer/Designer</p>
+        <p>@ MIT Media Lab</p>
+        <p>2024 - 2025</p>
+        <p>
+          Conducted qualitative data analysis for the NeuralFutures project,
+          examining AI's impact on cognitive processes
+        </p>
+
+        <p>Quantitative Finance Undergraduate Research Assistant</p>
+        <p>@ MIT Sloan School of Management</p>
+        <p>2024</p>
+        <p>
+          Analyzed financial and market data from pharmaceutical companies and
+          implemented a predictive model to forcast real-world financial trends
+        </p>
+      </div>
+
+      <h3 >There are so many Data Analyst. Why hire me?</h3>
+      <p >
+        I turn data into decisions. <br><br>
+        I'm a lifelong learner who's not afraid to dive into messy datasets.
+        Through everything I do, I'm constantly growing as an analyst and
+        overall storyteller. I'm willing to step in and tackle whatever needs
+        analyzing, regardless of tools or domains. Need someone to wrangle messy
+        CSV files and build dashboards? I got you. Need help running statistical
+        models and presenting insights to stakeholders? I'm your person.
+      </p>
+
+      <h3 >If I wasn't an analyst, what would I be?</h3>
+      <p >
+        Ideally, an origami artist teaching people that one crease at a time
+        creates something beautiful. <br><br>
+        Realistically, a film critic breaking down the narrative choices that
+        make us laugh, cry, or think differently. Above anything, I love
+        storytelling and understanding human behavior, what resonates with
+        audiences, and how paying attention to the details reveals the bigger picture, 
+        something like folding paper or analyzing data :&#41;
+      </p>
+    </main>
+    <footer>
+      <p>&#169; Ashley Youna Kang, <span id="year"></span></p>
+      <img
+        src="./assets/linkedin.png"
+        alt="My LinkedIn profile"
+        class="icon"
+        onclick="window.open('https://www.linkedin.com/in/-ashleykang/')"
+      />
+      <img
+        src="./assets/instagram.png"
+        alt="My Instagram profile"
+        class="icon"
+        onclick="window.open('https://www.instagram.com/samweolizi/')"
+      />
     </footer>
-</body>
+    <script>
+      document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+  </body>
+  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="script/script_hover.js"></script>
+  <script src="script/main.js"></script>
 </html>

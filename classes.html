@@ -1,176 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>classes</title>
-        <link rel="stylesheet" href="css/html5reset.css">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="icon" href="assets/favicon.ico">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work | Ashley Kang</title>
+    <!-- <link rel="stylesheet" href="css/html5reset.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="css/style_hover.css">
+</head>
+<body>
+    <div class="off-screen">
+        <button type="button" class="button btn-primary" onclick="window.location.href='work.html'">
+            work
+        </button>
+        <button type="button" class="button btn-primary" onclick="window.location.href='classes.html'">
+            classes
+        </button>
+        <button type="button" class="button btn-primary" onclick="window.location.href='art.html'">
+            art
+        </button>
+        <button type="button" class="button btn-primary" onclick="window.location.href='aboutme.html'">
+            about me
+        </button>
+    </div>
+    
+    <nav>
+        <a href="index.html" class="logo-link">
+            <img src="assets/favicon.ico" alt="Home" class="nav-logo">
+        </a>
+        <div class="ham-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+    
+    <main class="work-page">
+        <div class="grouping">
+            <h1>Related Classes</h1>
+            <p class="language">Used Language(s)/Software</p>
+        </div>
+        <div class="grid-view-class">
+            <h3>Computer Science</h3>
+            <p>Computer Programming and Problem Solving (CS111)</p>
+            <p class="language">Python</p>
+            <p>Computing for the Socio-Techno Web (CS115)</p>
+            <p class="language">HTML, CSS, JavaScript</p>
+            <p>Intro to Game Design (CS121)</p>
+            <p class="language">C, Unity</p>
+            <p>Data Structures (CS230)</p>
+            <p class="language">Java</p>
+            <p>Fundamental Algorithms (CS231)</p>
+            <p class="language">Python</p>
+            <p>Machine Learning (CS244)</p>
+            <p class="language">Python</p>
+            <p>Data Science and the Web (CS315)</p>
+            <p class="language">Python</p>
+            <p>Databases with Web Interfaces (CS304)</p>
+            <p class="language">JavaScript, Express, MongoDB</p>
+            <p>Computer Graphics (CS307)</p>
+            <p class="language">JavaScript, WebGL, Three.js</p>
 
-    <body>
-        <nav>
-            <div class="nav-links">
-                <div class="nav-left">
-                    <a href="index.html">home</a>
-                </div>
-                <div class="nav-center">
-                    <a href="work.html">back to work</a>
-                </div>
-                <div class="nav-right">
-                    <a href="files/KangA_CV.pdf">resume</a>
-                </div>
-            </div>
-        </nav>
-        <main>
-            <div>
-                <h1 class="title">Related Classes</h1>
-                <br><br><br><br><br>
-                <div class="grid-container-classes">
-                    <div class="grid-item-classes" id="computer-science">
-                        <span class="pill-title">Computer Science</span>
-                        <br><br>
-                        <div class="cs-left-column">
-                        <span class="pill-sub">Computer Programming and Problem Solving</span>
-                        <br><br>
-                            <div class="col-12 tool-container">
-                                <p>CS 111</p>
-                                <div>Language: Python</div>
-                            </div>
-                    
-                            <span class="pill-sub">Computing for the Socio-Techno Web</span>
-                            <br><br>
-                            <div class="col-12 tool-container">
-                                <p>CS 115</p>
-                                <div>Languages: HTML, CSS, JavaScript</div>
-                            </div>
-                    
-                            <span class="pill-sub">Intro to Game Design</span>
-                            <br><br>
-                            <div class="col-12 tool-container">
-                                <p>CS 121</p>
-                                <div>Languages: Unity, C</div>
-                            </div>
 
-                            <span class="pill-sub">Data Structures</span>
-                            <br><br>
-                            <div class="col-12 tool-container">
-                                <p>CS 230</p>
-                                <div>Language: Java</div>
-                            </div>
-                            
-                            <span class="pill-sub">Fundamental Algorithms</span>
-                            <br><br>
-                            <div class="col-12 tool-container">
-                                <p>CS 231</p>
-                                <div>Languages: Python</div>
-                            </div>
-                        </div>
-                    
+            <h3>Statistics</h3>
+            <p>Data Literacy: Everyday Applications (STAT150)</p>
+            <p class="language">Microsoft Excel</p>
+            <p>Statistics and Data Analysis (STAT218)</p>
+            <p class="language">R</p>
+            <p>Applied Data Analysis and Statistical Inference (STAT260)</p>
+            <p class="language">R</p>
+            <p>Causal Inference (STAT309)</p>
+            <p class="language">R</p>
+            <p>Regression Analysis and Statistical Models (STAT318)</p>
+            <p class="language">R</p>
 
-                        <div class="cs-right-column">
-                            <span class="pill-sub">Machine Learning</span>
-                            <br><br>
-                            <div class="col-12 tool-container">
-                                <p>CS 244</p>
-                                <div>Language: Python</div>
-                            </div>
-                    
-                            <span class="pill-sub">Data Science and the Web</span>
-                            <br><br>
-                            <div class="col-12 tool-container">
-                                <p>CS 315</p>
-                                <div>Language: Python</div>
-                            </div>
-                    
-                            <span class="pill-sub">Databases with Web Interfaces</span>
-                            <br><br>
-                            <div class="col-12 tool-container">
-                                <p>CS 304</p>
-                                <div>Languages: JavaScript, Express, MongoDB</div>
-                            </div>
-                    
-                            <span class="pill-sub">Computer Graphics</span>
-                            <br><br>
-                            <div class="col-12 tool-container">
-                                <p>CS 307</p>
-                                <div>Languages: JavaScript, WebGL, and Three.js</div>
-                            </div>
-                        </div>
-                    </div>
+            <h3>Mathematics</h3>
+            <p>Multivariate Calculus (MATH 205)</p>
+            <p>Linear Algebra (MATH 206)</p>
+            <p>Differential Equations with Applied Linear Alegbra (MATH 215)</p>
+            <p>Combinatorics and Graph Theory (MATH225)</p>
 
-                    <div class="grid-item-classes" id="statistics">
-                        <span class="pill-title">Statistics</span>
-                        <br>
-                        <span class="pill-sub">Data Literacy: Everyday Applications</span>
-                        <br><br>
-                        <div class="col-12 tool-container">
-                            <p>STAT 150</p>
-                            <div>Software: Microsoft Excel</div>
-                        </div>
-
-                        <span class="pill-sub">Statistics and Data Analysis</span>
-                        <br><br>
-                        <div class="col-12 tool-container">
-                            <p>STAT 218</p>
-                            <div>Language: R</div>
-                        </div>
-
-                        <span class="pill-sub">Applied Data Analysis and Statistical Inference</span>
-                        <br><br>
-                        <div class="col-12 tool-container">
-                            <p>STAT 260</p>
-                            <div>Language: R</div>
-                        </div>
-                        
-                        <span class="pill-sub">Causal Inference</span>
-                        <br><br>
-                        <div class="col-12 tool-container">
-                            <p>STAT 309</p>
-                            <div>Language: R</div>
-                        </div>
-                        
-                        <span class="pill-sub">Regression Analysis and Statistical Models</span>
-                        <br><br>
-                        <div class="col-12 tool-container">
-                            <p>STAT 318</p>
-                            <div>Language: R</div>
-                        </div>
-                    </div>
-
-                    <div class="grid-item-classes" id="mathematics">
-                        <span class="pill-title">Mathematics</span>
-                        <br>
-                        <span class="pill-sub">Multivariate Calculus</span>
-                        <br><br>
-                        <div class="col-12 tool-container">
-                            <p>MATH 205</p>
-                        </div>
-
-                        <span class="pill-sub">Linear Algebra</span>
-                        <br><br>
-                        <div class="col-12 tool-container">
-                            <p>MATH 206</p>
-                        </div>
-
-                        <span class="pill-sub">Differential Equations with Applied Linear Alegbra</span>
-                        <br><br>
-                        <div class="col-12 tool-container">
-                            <p>MATH 215</p>
-                        </div>
-
-                        <span class="pill-sub">Combinatorics and Graph Theory</span>
-                        <br><br>
-                        <div class="col-12 tool-container">
-                            <p>MATH225</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </main>
-        <footer class="footer">
-            <p>&#169; Ashley Youna Kang, 2024</p>
-        </footer>
-    </body>
+        </div>
+    </main>
+    <footer>
+        <p>&#169; Ashley Youna Kang, <span id="year"></span></p>
+        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="window.open('https://www.linkedin.com/in/-ashleykang/')">
+        <img src="./assets/instagram.png" alt="My Instagram profile" class="icon" onclick="window.open('https://www.instagram.com/samweolizi/')">
+    </footer>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+</body>
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+<script src="script/script_hover.js"></script>
+<script src="script/main.js"></script>
 </html>
