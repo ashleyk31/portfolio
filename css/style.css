@@ -129,7 +129,7 @@ nav {
     width: 100%;
     max-width: 450px;
     position: fixed;
-    top: -100%;
+    top: -150%;
     right: 0;
     transition: top 0.3s ease;
     z-index: 999;
