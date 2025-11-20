@@ -12,14 +12,13 @@ p{
     font-size: 13px;
 }
 
-.sidebar, #sidebar{
+#sidebar {
     display: none;
 }
 
 .sun, .moon {
     display: none;
 }
-
 
 /* ============================================================================== */
 /* ============================================================================== */
@@ -61,8 +60,8 @@ body.main {
     /* overflow: hidden;  */
 }
 
-.main a,
-.main a:visited {
+nav a,
+nav a:visited {
     color: rgb(224, 231, 233);
     text-decoration: none;
 }
@@ -460,6 +459,10 @@ button.profile {
         display: none;
     }
 
+    main.work-page {
+        padding: 100px 2rem 20px 23%;
+    }
+
     nav {
         width: 20%;
         height: 100vh;
@@ -474,6 +477,8 @@ button.profile {
     nav {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        padding: 3em 2em 0 2em;
+        justify-items: center;
     }
 
     .sun, .moon {
@@ -485,4 +490,24 @@ button.profile {
         padding-top: 10px;
         padding-left: 20px;
     }
+
+    .sidebar p > a:hover, 
+    .sidebar p > a.current-page {
+        color: rgb(214, 176, 64);
+        font-weight: bolder;
+    }
+
+    body:not(.main) nav > img.sun {
+        display:none;
+    }
+
+    body:not(.main) #sidebar {
+        display: block;
+    }
+
+    /* .icon-rotate {
+        transform: rotate(180deg);
+        transition: transform 0.3s ease;
+    } */
+
 }

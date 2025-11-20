@@ -12,6 +12,21 @@ hamMenu.addEventListener('click', () => {
 // ========================================================
 // ========================================================
 // nav bar toggle
+// const toggleBtn = document.getElementById("menu-toggle");
+// const sidebar = document.querySelector(".sidebar");
+
+// toggleBtn.addEventListener("click", () => {
+//     const isOpen = sidebar.style.display === "flex";
+
+//     if (isOpen) {
+//         sidebar.style.display = "none";
+//         toggleBtn.src = "assets/view.png";
+//     } else {
+//         sidebar.style.display = "flex";
+//         toggleBtn.src = "assets/hide.png";
+//     }
+// });
+
 const toggleBtn = document.getElementById("menu-toggle");
 const sidebar = document.querySelector(".sidebar");
 
@@ -21,8 +36,11 @@ toggleBtn.addEventListener("click", () => {
     if (isOpen) {
         sidebar.style.display = "none";
         toggleBtn.src = "assets/view.png";
+
     } else {
         sidebar.style.display = "block";
         toggleBtn.src = "assets/hide.png";
     }
+    toggleBtn.classList.toggle("icon-rotate");
+    
 });
