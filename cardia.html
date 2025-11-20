@@ -54,32 +54,34 @@
 
     <main class="work-page grid-view-main">
       <h1>Cardia Cancer Data from the Karolinska Institute</h1>
-      <div>
-        <h4>[ TIMELINE ]</h4>
-        <p>January 2024 - May 2024</p>
-      </div>
+      <div class="work-desc">
+        <div>
+          <h4>[ TIMELINE ]</h4>
+          <p>January 2024 - May 2024</p>
+        </div>
 
-      <div>
-        <h4>[ TOOLS ]</h4>
-        <p>R</p>
-        <p>Causal Inference</p>
-      </div>
+        <div>
+          <h4>[ TOOLS ]</h4>
+          <p>R</p>
+          <p>Causal Inference</p>
+        </div>
 
-      <div>
-        <h4>[ STORY ]</h4>
-        <p>
-            I analyzed observational data from the Karolinska Institute to
-            investigate whether cardia cancer patients treated at high-volume
-            hospitals have better survival outcomes than those at low-volume
-            facilities. I successfully employed instrumental variables and
-            propensity score methods to address confounding factors, revealing a
-            modest positive effect of 0.04 years in survival when assigned to
-            high-volume hospitals. My role as the analyst was to focus on
-            assumption validation, propensity score modeling, and average causal
-            effect estimation. This case study emphasizes the methodological rigor
-            I applied (from SUTVA verification to subclass stratification) to
-            extract causal insights from observational healthcare data.
-        </p>
+        <div>
+          <h4>[ STORY ]</h4>
+          <p>
+              I analyzed observational data from the Karolinska Institute to
+              investigate whether cardia cancer patients treated at high-volume
+              hospitals have better survival outcomes than those at low-volume
+              facilities. I successfully employed instrumental variables and
+              propensity score methods to address confounding factors, revealing a
+              modest positive effect of 0.04 years in survival when assigned to
+              high-volume hospitals. My role as the analyst was to focus on
+              assumption validation, propensity score modeling, and average causal
+              effect estimation. This case study emphasizes the methodological rigor
+              I applied (from SUTVA verification to subclass stratification) to
+              extract causal insights from observational healthcare data.
+          </p>
+        </div>
       </div>
       <h3>Introduction</h3>
       <p>
@@ -122,13 +124,15 @@
         all variables. This tree below has a large difference between the active
         and control for the age variable, specifically for the propensity scores
         0.279 and 0.571.
-        <img src="art/work4-1.png" alt="propensity score 1" />
-
+        <div class="work-images">
+          <img src="art/work4-1.png" alt="propensity score 1">
+        </div>
         So, I created another tree using all variables (where R selected the 2
         most significant covariates, which are FromRuralArea and
         AgeAtDiagnosis), and the covariates were better balanced.
-
-        <img src="art/work4-2.png" alt="propensity score 2" />
+        <div class="work-images">
+          <img src="art/work4-2.png" alt="propensity score 2" />
+        </div>
         The mean values of active and control within the subgroups are balanced,
         so I used these three subclasses to estimate the average causal effect.
       </p>

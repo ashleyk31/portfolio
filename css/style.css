@@ -45,6 +45,7 @@ body.main {
     height: 100vh;
     display: flex;
     flex-direction: column;  
+    gap: 10px;
     background-color: rgb(51, 71, 74);
     color: rgb(224, 231, 233);
     font-size: 13px;
@@ -63,12 +64,19 @@ img {
 
 .main h1 {
     font-family: "Tektur";
-    font-size: clamp(60px, 10vw, 190px);
-    margin: 0;
+    font-size: clamp(60px, 8vw, 170px);
+    transform-origin: top;
     transform: scaleY(1.5);
+    margin: 0 0 1.1em 0;
     max-height: 90%;
     overflow-wrap: break-word;
 }
+
+.main p {
+    margin-top: 10px;
+    font-size: clamp(13px, 1vw, 20px);
+}
+
 
 .main h1:hover {
     color: rgb(214, 176, 64);
@@ -219,7 +227,7 @@ main.work-page {
     grid-template-columns: 1fr;
 }
 
-.grid-view-work > *:nth-child(2n) {
+.grid-view-work > *:nth-child(3n) {
     margin-bottom: 50px;
 }
 
@@ -227,6 +235,10 @@ main.work-page {
     display: grid;
     grid-template-columns: 1fr;
     gap: 50px;
+}
+
+.grid-view2 h2 {
+    margin-bottom: 10px;
 }
 
 .grid-view3 {
@@ -318,15 +330,16 @@ button.profile {
 .profile div.buttons {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .profile div p:nth-child(4n+1) {
     font-weight: bold;
     color: rgb(51, 71, 74);
+    margin-top: 15px;
 }
 
-.profile div p:nth-child(4n+2) {
+.profile div:not([class]) p:nth-child(4n+2) {
     font-size: 12px;
     color: rgb(119, 148, 152);
 }
@@ -344,6 +357,81 @@ button.profile {
 /* ============================================================================== */
 /* ipad size page  */
 
-@media screen and (min-width: 770px) {
+@media screen and (min-width: 650px) {
+    .off-screen {
+        height: auto;
+        max-width: 300px;
+    }
     
+    .grid-view-work {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* justify-items: center; */
+    }
+    
+    .grid-view-work > *:nth-child(3n) {
+        margin-bottom: 0px;
+        align-self: center;
+        margin-left: 10px;
+    }
+    .grid-view-work a:has(h2) {
+        grid-column: 1/3;
+        justify-self: center;
+    }
+
+    .work-page h3  {
+        justify-content: end;
+        font-size: 16px;
+    }
+
+    .grid-view2 {
+        grid-template-columns: 1fr 1fr;
+    }
+    .grid-view {
+        grid-template-columns: 1fr 1fr;
+    }
+    .profile img {
+        filter: sepia(0.7) brightness(0.95) saturate(0.7) hue-rotate(-10deg);
+        grid-column: 1;
+        width: 90%;
+    }
+    
+
+    .profile div p:nth-child(4n+1) {
+        font-size: 21px;
+    }
+
+    .profile div:not([class]) p:nth-child(4n+2), 
+    .profile div p:nth-child(4n+3), 
+    .profile div p:nth-child(4n+4)  {
+        font-size: 14px;
+    }
+
+    .profile h3 {
+        font-size: 21px;
+    }
+
+    .grid-view-profile .grid-view p:first-of-type {
+        font-size: 16px;
+        margin: 0 15px;
+        align-self: center;
+        color: rgb(95, 110, 55); 
+    }
+
+    .work-desc {
+        display: grid;
+        grid-template-columns: 0.5fr 0.3fr 1fr;
+        gap: 10px;
+    }
+
+    .work-images {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .grid-view3 img {
+        max-width: 80%;
+    }
+ 
 }

@@ -54,39 +54,40 @@
 
     <main class="work-page grid-view-main">
       <h1>Personalization Factors on TikTok</h1>
-      <div>
-        <h4>[ TIMELINE ]</h4>
-        <p>August 2023 - December 2023</p>
-      </div>
+      <div class="work-desc">
+        <div>
+          <h4>[ TIMELINE ]</h4>
+          <p>August 2023 - December 2023</p>
+        </div>
 
-      <div>
-        <h4>[ TOOLS ]</h4>
-        <p>Selenium</p>
-        <p>Jaccard Index</p>
-        <p>Time Series</p>
-        <p>Seaborn</p>
-        <p>Pandas</p>
-      </div>
+        <div>
+          <h4>[ TOOLS ]</h4>
+          <p>Selenium</p>
+          <p>Jaccard Index</p>
+          <p>Time Series</p>
+          <p>Seaborn</p>
+          <p>Pandas</p>
+        </div>
 
-      <div>
-        <h4>[ STORY ]</h4>
-        <p>
-            My 5 teammates and I replicated a research from the
-            University of Zurich, investigating how TikTok's recommendation
-            algorithm personalizes content across different languages. We
-            successfully scraped and analyzed data from six language settings,
-            serving as the control group to isolate whether language alone
-            influences the For You Page—revealing that TikTok's algorithm
-            increasingly personalizes content over time, with Jaccard Index values
-            decreasing as user sessions progress. My role as Project Manager and
-            Data Analyst focused on German-language data collection,
-            cross-language analysis, and similarity metrics. This case study
-            emphasizes the web scraping methodology I implemented, the Jaccard
-            Index calculations I performed, and the coordination strategies that
-            unified our team's multilingual dataset into coherent findings.
-        </p>
+        <div>
+          <h4>[ STORY ]</h4>
+          <p>
+              My 5 teammates and I replicated a research from the
+              University of Zurich, investigating how TikTok's recommendation
+              algorithm personalizes content across different languages. We
+              successfully scraped and analyzed data from six language settings,
+              serving as the control group to isolate whether language alone
+              influences the For You Page—revealing that TikTok's algorithm
+              increasingly personalizes content over time, with Jaccard Index values
+              decreasing as user sessions progress. My role as Project Manager and
+              Data Analyst focused on German-language data collection,
+              cross-language analysis, and similarity metrics. This case study
+              emphasizes the web scraping methodology I implemented, the Jaccard
+              Index calculations I performed, and the coordination strategies that
+              unified our team's multilingual dataset into coherent findings.
+          </p>
+        </div>
       </div>
-
       <h3>Introduction</h3>
       <p>
         With over one billion users, TikTok is one of the most popular social
@@ -123,12 +124,28 @@
       </p>
 
       <h3>Visualization</h3>
-      <p>Figure 1: Table with the Top Size Hashtags Across the Six Languages</p>
-      <img src="art/work2figure.png" alt="poster" />
-      <p>Figure 2: Graph for the German Language Analysis</p>
-      <img src="art/work2-slide1.jpg" alt="jaccard index1" />
-      <p>Figure 3: Visualization for the German Language Jaccard Index</p>
-      <img src="art/work2-slide2.jpg" alt="jaccard index1" />
+      <div class="work-images">
+        <figure>
+          <img src="art/work2figure.png" alt="poster" />
+          <figcaption>
+              Figure 1: Table with the Top Size Hashtags Across the Six Languages
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="art/work2-slide1.jpg" alt="jaccard index1" />
+          <figcaption>
+              Figure 2: Graph for the German Language Analysis
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="art/work2-slide2.jpg" alt="jaccard index1" />
+          <figcaption>
+              Figure 3: Visualization for the German Language Jaccard Index
+          </figcaption>
+        </figure>
+      </div>
     </main>
     <footer>
       <p>&#169; Ashley Youna Kang, <span id="year"></span></p>
