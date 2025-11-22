@@ -18,6 +18,11 @@ p{
 
 .sun, .moon {
     display: none;
+    filter: invert(1);
+}
+
+#content {
+    display: none;
 }
 
 /* ============================================================================== */
@@ -26,8 +31,8 @@ p{
 /* dark:  rgb(51, 71, 74); */
 /* light:  rgb(119, 148, 152); */
 /* white: rgb(224, 231, 233) */
-/* red: rgb(190, 60, 60) */
-/* yellow: color: rgb(214, 176, 64); */
+/* red: rgb(152, 48, 48) */
+/* yellow: color: rgb(190, 150, 45);; */
 /* olive green: rgb(115, 130, 60); */
 /* moss: rgb(95, 110, 55); */
 /* sage green: rgb(175, 190, 165); */
@@ -44,6 +49,7 @@ body.main main {
     justify-content: center;
     text-align: center;
     align-items: center;
+    gap: 15px;
     background-color: rgb(51, 71, 74);
     color: rgb(224, 231, 233);
 }
@@ -57,6 +63,7 @@ body.main {
     background-color: rgb(51, 71, 74);
     color: rgb(224, 231, 233);
     font-size: 13px;
+    justify-content: center;
     /* overflow: hidden;  */
 }
 
@@ -80,14 +87,14 @@ img {
     overflow-wrap: break-word;
 }
 
-.main p {
+nav p {
     margin-top: 10px;
-    font-size: clamp(13px, 1vw, 20px);
+    font-size: clamp(14px, 1vw, 20px);
 }
 
 
 .main h1:hover {
-    color: rgb(214, 176, 64);
+    color: rgb(190, 150, 45);
 }
 
 .main h1 .line {
@@ -113,23 +120,87 @@ footer p {
 
 
 footer img {
-    width: 10%;
+    width: 20px;
     filter: invert(1);
 }
 
-footer img:first-of-type {
+footer a:first-of-type {
     justify-self: end;
 }
 
-footer img:last-of-type {
+footer a:last-of-type {
     justify-self: start;
 }
 
 /* ============================================================================== */
 /* ============================================================================== */
+/* password styling */
+/* Main container - centers the box on the page */
+main.password {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(51, 71, 74);
+}
+
+/* Password box styling */
+#password-box {
+    background-color: rgb(224, 231, 233);
+    color: rgb(51, 71, 74); 
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 40px;
+    border-radius: 10px;
+    align-items: center;
+}
+
+#password-box h2 {
+    margin: 0;
+    text-align: center;
+}
+
+#password-box input,
+#password-box button {
+    width: 50%;
+}
+
+#password-box input {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid rgb(119, 148, 152);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#password-box button {
+    padding: 10px 30px;
+    font-size: 16px;
+    background-color: rgb(119, 148, 152);
+    color: rgb(224, 231, 233);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#password-box button:hover {
+    background-color: rgb(51, 71, 74);
+}
+
+#error {
+    color: rgb(152, 48, 48);
+    display: none;
+    margin: 0;
+    text-align: center;
+}
+
+
+/* ============================================================================== */
+/* ============================================================================== */
 /* nav bar styling */
 nav {
-    position: fixed;
+    position: top;
     justify-content: space-between;
     width: 100%;
     padding: 1rem;
@@ -232,6 +303,15 @@ main.work-page {
     text-decoration: none;
 }
 
+#distinct-link {
+    color: rgb(20, 40, 70);
+    text-decoration: underline;
+}
+
+#distinct-link:hover{
+    color: rgb(153, 50, 50);
+}
+
 .grid-view {
     display: grid;
     grid-template-columns: 1fr;
@@ -261,9 +341,16 @@ main.work-page {
     margin-bottom: 50px;
 }
 
-.grid-view3 h3 {
-    color: rgb(95, 110, 55);
+.grid-view3 h2, 
+.grid-view3 h4 {
+    font-size: 16px;
+    color: rgb(153, 50, 50);
 }
+
+.work-page .grid-view3 h3 {
+    font-size: 14px;
+}
+
 
 .grid-view-main {
     display: grid;
@@ -285,7 +372,7 @@ body {
 
 main.work-page {
     flex: 1;
-    padding: 100px 2rem 20px 2rem;
+    padding: 100px 5% 20px 5%;
 }
 
 
@@ -295,13 +382,14 @@ main.work-page {
     gap: 10px;
 }
 
-.grid-view-class h3 {
+.grid-view-class h2 {
+    font-size: 20px;
     grid-column: 1/3;
     text-align: center;
 }
 
 p.language {
-    color: rgb(190, 60, 60);
+    color: rgb(152, 48, 48);
 }
 
 /* ============================================================================== */
@@ -314,8 +402,11 @@ p.language {
     gap: 10px;
 }
 
-.grid-view-profile h3 {
-    margin-top: 30px; /* adjust as needed */
+.grid-view-profile h1 {
+    font-size: 21px;
+    margin-top: 30px;
+    text-align: left;
+    padding: 10px 0;
 }
 button.profile {
     background-color: rgb(119, 148, 152);
@@ -343,22 +434,22 @@ button.profile {
     justify-content: space-evenly;
 }
 
-.profile div p:nth-child(4n+1) {
+.profile h2 {
     font-weight: bold;
     color: rgb(51, 71, 74);
-    margin-top: 15px;
+    margin-top: 14px;
 }
 
 .profile div:not([class]) p:nth-child(4n+2) {
     font-size: 12px;
-    color: rgb(119, 148, 152);
+    color: rgb(152, 48, 48);
 }
 .profile div p:nth-child(4n+3) {
     font-size: 10px;
-    color: rgb(119, 148, 152);
+    color: rgb(152, 48, 48);
 }
 .profile div p:nth-child(4n+4) {
-    color: rgb(115, 130, 60);
+    color: rgb(51, 71, 74);
 }
 
 
@@ -384,7 +475,7 @@ button.profile {
         align-self: center;
         margin-left: 10px;
     }
-    .grid-view-work a:has(h2) {
+    .grid-view-work h2 {
         grid-column: 1/3;
         justify-self: center;
     }
@@ -429,13 +520,17 @@ button.profile {
         font-size: 16px;
         margin: 0 15px;
         align-self: center;
-        color: rgb(95, 110, 55); 
+        color: rgb(75, 90, 45); 
     }
 
     .work-desc {
         display: grid;
         grid-template-columns: 0.5fr 0.3fr 1fr;
         gap: 10px;
+    }
+
+    .work-desc h2{
+        font-size: 16px;
     }
 
     .work-images {
@@ -458,31 +553,33 @@ button.profile {
     .ham-menu {
         display: none;
     }
-
+    
     main.work-page {
-        padding: 100px 2rem 20px 23%;
+        flex: 1;
+        padding: 100px 5% 20px 25%;
     }
 
     nav {
-        width: 20%;
+        position: fixed;
+        width: clamp(200px, 20%, 300px);
         height: 100vh;
     }
 
-    .sidebar {
-        display: flex;
-        flex-direction: column;
-        grid-column: 1/3;
-    }
 
     nav {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        padding: 3em 2em 0 2em;
+        padding: 30px 20px 0 20px;
         justify-items: center;
     }
 
     .sun, .moon {
         display: block;
+    }
+
+    .sidebar {
+        grid-column: 1/3;
+        display: flex;
     }
 
     .sidebar p {
@@ -493,21 +590,17 @@ button.profile {
 
     .sidebar p > a:hover, 
     .sidebar p > a.current-page {
-        color: rgb(214, 176, 64);
+        color: #F5D76E;
         font-weight: bolder;
     }
-
+    
     body:not(.main) nav > img.sun {
         display:none;
     }
-
+    
     body:not(.main) #sidebar {
         display: block;
     }
-
-    /* .icon-rotate {
-        transform: rotate(180deg);
-        transition: transform 0.3s ease;
-    } */
-
+    
 }
+
