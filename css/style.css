@@ -161,7 +161,8 @@ main.password {
     align-items: center;
 }
 
-#password-box h1 {
+#password-box label {
+    font-family: 'Ubuntu', 'Source Sans 3';
     font-size: 30px;
     margin: 0;
     text-align: center;
