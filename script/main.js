@@ -39,16 +39,16 @@ const currentPage = window.location.pathname.split('/').pop().toLowerCase().trim
 // Pages that don't need password
 const publicPages = ['index.html', 'aboutme.html', 'work.html', 'art.html', 'password.html', ''];
 
-// Check if user is authenticated OR on a public page
+// Check if user already typed in the password OR is on a public page
 const isAuthenticated = sessionStorage.getItem('authenticated') === 'true';
 
 if (!publicPages.includes(currentPage) && !isAuthenticated && urlParams.get('auth') !== 'true') {
     window.location.href = 'password.html?redirect=' + currentPage;
 }
 
-// If they came with ?auth=true, save to sessionStorage
+// If they successfully entered the password
 if (urlParams.get('auth') === 'true') {
-    console.log("true")
+    console.log("password correct")
     sessionStorage.setItem('authenticated', 'true');
 }
 
@@ -57,10 +57,11 @@ const redirectPage = urlParams.get('redirect') || 'index.html';
 
 function checkPassword() {
     const entered = document.getElementById("password").value;
-
+    
     if (entered == correct) {
-        sessionStorage.setItem('authenticated', 'true');  // Save authentication
-        window.location.href = redirectPage;  // No need for ?auth=true anymore
+        // user doesn't need to type in the password again
+        sessionStorage.setItem('authenticated', 'true'); 
+        window.location.href = redirectPage; 
     } else {
         document.getElementById("error").style.display = "block";
     }
