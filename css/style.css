@@ -595,18 +595,20 @@ button.profile {
     }
 
     nav {
-        align-items: start;
-        position: fixed;
-        width: clamp(200px, 20%, 300px);
-        height: 100vh;
-    }
-
-
-    nav {
         display: grid;
         grid-template-columns: 1fr 1fr;
         padding: 30px 20px 0 20px;
         justify-items: center;
+        align-items: start;
+        position: fixed;
+        width: clamp(200px, 20%, 300px);
+        height: 100%;
+    }
+
+    
+    nav p {
+        margin-top: 10px;
+        font-size: clamp(12px, 1vw, 17px);
     }
 
     .sun, .moon {
