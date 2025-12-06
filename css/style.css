@@ -462,6 +462,7 @@ button.profile {
     font-weight: bold;
     color: rgb(51, 71, 74);
     margin-top: 14px;
+    font-size: 18px;
 }
 
 .profile div:not([class]) p:nth-child(4n+2) {
