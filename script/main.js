@@ -9,6 +9,13 @@ hamMenu.addEventListener('click', () => {
     offScreenMenu.classList.toggle('active');
 });
 
+window.addEventListener('resize', () => {
+    if (window.innerWidth > 1000) {
+        hamMenu.classList.remove('active');
+        offScreenMenu.classList.remove('active');
+    }
+});
+
 // ========================================================
 // ========================================================
 // nav bar toggle
@@ -66,3 +73,9 @@ function checkPassword() {
         document.getElementById("error").style.display = "block";
     }
 }
+
+
+
+document.addEventListener('focus', (event) => {
+  console.log('Focused element:', event.target); // Logs the element
+}, true);

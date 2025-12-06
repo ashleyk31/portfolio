@@ -25,10 +25,9 @@ p{
     display: none;
 }
 
-:focus {
+:focus-visible {
     border: solid 5px #F5D76E;
 }
-
 
 /* ============================================================================== */
 /* ============================================================================== */
@@ -69,8 +68,8 @@ body.main {
     color: rgb(224, 231, 233);
     font-size: 13px;
     justify-content: center;
-    /* overflow: hidden;  */
 }
+
 
 nav a,
 nav a:visited {
@@ -207,32 +206,32 @@ main.password {
 /* ============================================================================== */
 /* nav bar styling */
 nav {
-    position: top;
-    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    padding: 1rem;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
     background-color: rgb(51, 71, 74);
     z-index: 1000;
+    box-sizing: border-box;
 }
-
 .off-screen {
     background-color: rgb(119, 148, 152);
-    height: 100vh;
-    width: 100%;
-    max-width: 450px;
-    position: fixed;
     top: -150%;
     right: 0;
     transition: top 0.6s ease;
     z-index: 999;
-    display: flex;
+    display: none;
+    position: fixed;
     flex-direction: column;
     padding: 100px 20px 20px;
-    align-items: center
 }
 
 .off-screen.active {
+    display: flex;
     top: 0;
     gap: 10px;
 }
@@ -280,6 +279,16 @@ nav {
 
 .nav-logo.logo {
     filter: invert(1);
+}
+
+.nav-button {
+    padding: 0.6rem 1.5rem;  
+    background: #F5D76E;
+    border: none;
+}
+
+.nav-button:hover {
+    background: #cbb7b4;
 }
 
 /* ============================================================================== */
@@ -560,6 +569,17 @@ button.profile {
     .ham-menu {
         display: none;
     }
+
+    .off-screen {
+        display: none;
+    }
+
+    .off-screen.active {
+        display: flex;
+        top: 0;
+        gap: 10px;
+    }
+
     
     main.work-page {
         flex: 1;
