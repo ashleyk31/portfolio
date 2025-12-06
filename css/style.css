@@ -291,6 +291,14 @@ nav {
     background: #cbb7b4;
 }
 
+#menu-toggle {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+
 /* ============================================================================== */
 /* ============================================================================== */
 /* other pages */
@@ -587,6 +595,7 @@ button.profile {
     }
 
     nav {
+        align-items: start;
         position: fixed;
         width: clamp(200px, 20%, 300px);
         height: 100vh;

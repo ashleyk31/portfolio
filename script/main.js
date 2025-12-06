@@ -21,19 +21,18 @@ window.addEventListener('resize', () => {
 // nav bar toggle
 const toggleBtn = document.getElementById("menu-toggle");
 const sidebar = document.querySelector(".sidebar");
+const toggleImg = toggleBtn.querySelector("img");
 
 toggleBtn.addEventListener("click", () => {
     const isOpen = sidebar.style.display === "block";
 
     if (isOpen) {
         sidebar.style.display = "none";
-        toggleBtn.src = "assets/view.png";
-
+        toggleImg.src = "assets/view.png";
     } else {
         sidebar.style.display = "block";
-        toggleBtn.src = "assets/hide.png";
+        toggleImg.src = "assets/hide.png";
     }
-    
 });
 
 // ========================================================
