@@ -43,7 +43,7 @@ const urlParams = new URLSearchParams(window.location.search);
 const currentPage = window.location.pathname.split('/').pop().toLowerCase().trim();
 
 // Pages that don't need password
-const publicPages = ['index.html', 'aboutme.html', 'work.html', 'art.html', 'password.html', ''];
+const publicPages = ['index.html', 'graphic.html', 'work.html', 'art.html', 'password.html', ''];
 
 // Check if user already typed in the password OR is on a public page
 const isAuthenticated = sessionStorage.getItem('authenticated') === 'true';
@@ -72,9 +72,3 @@ function checkPassword() {
         document.getElementById("error").style.display = "block";
     }
 }
-
-
-
-document.addEventListener('focus', (event) => {
-  console.log('Focused element:', event.target); // Logs the element
-}, true);
