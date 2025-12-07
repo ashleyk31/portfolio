@@ -43,7 +43,7 @@ const urlParams = new URLSearchParams(window.location.search);
 const currentPage = window.location.pathname.split('/').pop().toLowerCase().trim();
 
 // Pages that don't need password
-const publicPages = ['index.html', 'graphic.html', 'work.html', 'art.html', 'password.html', ''];
+const publicPages = ['index.html', 'graphic.html', 'digital.html', 'work.html', 'art.html', 'password.html', ''];
 
 // Check if user already typed in the password OR is on a public page
 const isAuthenticated = sessionStorage.getItem('authenticated') === 'true';
