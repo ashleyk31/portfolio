@@ -4,42 +4,59 @@
     <meta charset="utf-8">
     <title>Final Project</title>
     <style>
+      @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Tektur:wght@400..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
       canvas {
           display: block;
-          margin: 10px auto;
-          width: 90%;
-          height: 100%;
+          width: 80%;
+          height: auto;
+          margin: 0 auto;
           /* this is the size for the vertial view */
           /* width: 350px;
           height: 600px; */
       }
+
+      body {
+        margin: 70px 40px;
+        font-family: 'Ubuntu', 'Source Sans 3';
+        color: rgb(224, 231, 233);
+        background-color: rgb(51, 71, 74);
+      }
+
+      .graphic {
+        margin: 0px 30%;
+      }
+      
     </style>
+    <link rel="icon" href="../assets/favicon.ico">
 </head>
 
 <body>
-<h1>Final Project: Creative Scene</h1>
+  <main class="graphic">
+    <h1>Final Project: Creative Scene</h1>
 
-<script type="importmap">
-            {
-              "imports": {
-                  "three": "https://cdn.jsdelivr.net/npm/three@0.172.0/build/three.module.js",
-                  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.172.0/examples/jsm/",
-                  "tw": "https://cs.wellesley.edu/~cs307/threejs/libs/tw-sp25.js"
-              }
-            }
-</script>
-<script src="https://cs.wellesley.edu/~cs307/threejs/libs/dat.gui-r95.js"></script>
-<script type="module" src="main.js"></script>
+    <script type="importmap">
+                {
+                  "imports": {
+                      "three": "https://cdn.jsdelivr.net/npm/three@0.172.0/build/three.module.js",
+                      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.172.0/examples/jsm/",
+                      "tw": "https://cs.wellesley.edu/~cs307/threejs/libs/tw-sp25.js"
+                  }
+                }
+    </script>
+    <script src="https://cs.wellesley.edu/~cs307/threejs/libs/dat.gui-r95.js"></script>
+    <script type="module" src="main.js"></script>
 
-<h3>Keys: </h3>
-<ul>
-  <li>key <strong>s</strong>: start animation</li>
-  <li>key <strong>p</strong>: pause animation</li>
-  <li>key <strong>r</strong>: restart cars' positions and stop animation</li>
-  <li>number <strong>1</strong> key: camera 1</li>
-  <li>number <strong>2</strong> key: camera 2</li>
-  <li>number <strong>3</strong> key: camera 3</li>
-  <li>number <strong>4</strong> key: camera 4</li>
-</ul>
+    <h2>Keys: </h2>
+    <ul>
+      <li>key <strong>s</strong>: start animation</li>
+      <li>key <strong>p</strong>: pause animation</li>
+      <li>key <strong>r</strong>: restart cars' positions and stop animation</li>
+      <li>number <strong>1</strong> key: camera 1</li>
+      <li>number <strong>2</strong> key: camera 2</li>
+      <li>number <strong>3</strong> key: camera 3</li>
+      <li>number <strong>4</strong> key: camera 4</li>
+    </ul>
+  </main>
 </body>
 </html>
