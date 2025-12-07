@@ -421,6 +421,15 @@ p.language {
     margin: 10px;
     text-align: center;
 }
+
+
+.grid-view3 img.art {
+    max-height: 50vh;
+    height: auto;
+    width: auto;
+    display: block;
+}
+
 /* ============================================================================== */
 /* ============================================================================== */
 /* about page  */
@@ -570,14 +579,6 @@ button.profile {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 10px;
-    }
-
-    .grid-view3 img.art {
-        /* max-height: 50%; */
-        max-height: 50vh;
-        height: auto;
-        width: auto;
-        display: block;
     }
 }
 
